@@ -1,0 +1,130 @@
+/* Fonts are loaded via index.html link tags for better performance */
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.product-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
+
+.btn-hover-dark {
+    transition: all 0.3s;
+}
+
+.btn-hover-dark:hover {
+    background-color: #111;
+    color: white;
+}
+
+/* Animations */
+.fade-in-up { animation: fadeInUp 0.8s ease-out both; }
+.fade-in-left { animation: fadeInLeft 0.8s ease-out both; }
+.fade-in-right { animation: fadeInRight 0.8s ease-out both; }
+
+@keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes fadeInLeft { from { opacity: 0; transform: translateX(-30px); } to { opacity: 1; transform: translateX(0); } }
+@keyframes fadeInRight { from { opacity: 0; transform: translateX(30px); } to { opacity: 1; transform: translateX(0); } }
+
+.letter-spacing-1 { letter-spacing: 1px; }
+.letter-spacing-2 { letter-spacing: 2px; }
+.fw-black { font-weight: 900; }
+ 
+ /* Standardized View Button - Black Border Theme */
+ .btn-lax-view {
+     background-color: transparent !important;
+     color: #000 !important;
+     border: 2px solid #000 !important;
+     border-radius: 50rem !important;
+     padding: 0.5rem 1.5rem !important;
+     font-weight: 700 !important;
+     text-transform: uppercase !important;
+     font-size: 11px !important;
+     letter-spacing: 1px !important;
+     display: inline-flex !important;
+     align-items: center !important;
+     gap: 0.5rem !important;
+     transition: all 0.3s ease !important;
+     text-decoration: none !important;
+ }
+ 
+ .btn-lax-view:hover {
+     background-color: #000 !important;
+     color: white !important;
+     transform: translateY(-2px);
+     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important;
+ }
+
+/* =====================
+   MOBILE RESPONSIVENESS
+   ===================== */
+
+/* Prevent horizontal scroll globally */
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+/* Tables scroll horizontally on mobile instead of overflowing */
+.table-responsive {
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Hero sections: shrink text on mobile */
+@media (max-width: 576px) {
+    .display-1 { font-size: 2.2rem !important; }
+    .display-4 { font-size: 1.8rem !important; }
+    .display-5 { font-size: 1.6rem !important; }
+    .lead { font-size: 1rem !important; }
+
+    /* Product cards: fix image heights on smallest screens */
+    .product-card .card-img-top,
+    .product-card img[style] {
+        height: 220px !important;
+    }
+
+    /* Dashboard table: make buttons smaller */
+    .btn-lax-view {
+        padding: 0.35rem 0.9rem !important;
+        font-size: 10px !important;
+    }
+
+    /* Cart / order items: stack horizontally-laid items */
+    .mobile-stack {
+        flex-direction: column !important;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Page hero sections */
+    .min-h-hero { min-height: 200px !important; }
+
+    /* Make tables overflowable */
+    .card .table { font-size: 0.85rem; }
+
+    /* Profile page: stat cards full width */
+    .profile-stat-col { width: 50%; }
+
+    /* Checkout / cart summary: always full width on mobile */
+    .order-summary-sticky { position: static !important; }
+}
+
+/* Make sure images inside cards don't overflow */
+img { max-width: 100%; }
+
+/* Shop: filter sidebar on mobile */
+@media (max-width: 991px) {
+    .shop-filter-col { margin-bottom: 1.5rem; }
+}
+
+/* Navbar brand text size on small screens */
+@media (max-width: 400px) {
+    .navbar-brand { font-size: 1.4rem !important; }
+}
