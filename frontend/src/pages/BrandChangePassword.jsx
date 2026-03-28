@@ -49,7 +49,7 @@ const BrandChangePassword = () => {
 
         setLoading(true);
         try {
-            const { data } = await api.put('/brand/change-password', { oldPassword, newPassword });
+            const { data } = await api.put('/brand/auth/change-password', { oldPassword, newPassword });
             setSuccess(data.message || 'Password changed successfully!');
             setOldPassword('');
             setNewPassword('');

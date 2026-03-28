@@ -1,0 +1,580 @@
+[{
+  "_id": {
+    "$oid": "69b541fa8387db9d83fc4cf9"
+  },
+  "userId": {
+    "$oid": "69b534ec2df8766a91d05555"
+  },
+  "productId": {
+    "$oid": "69b473d416496cd4206c90f9"
+  },
+  "brandId": {
+    "$oid": "69b45a89dd3d8bb81dcc44c4"
+  },
+  "brandName": "StepStyle Official",
+  "productName": "Nike Air Max 270",
+  "quantity": 1,
+  "totalPrice": 150,
+  "address": "40 ,  SITA NAGAR, surat, GUJARAT, 395006, India",
+  "paymentMethod": "COD",
+  "orderStatus": "Cancelled",
+  "approvedByBrand": false,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-03-14T11:09:46.938Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-15T06:47:10.865Z"
+  },
+  "paymentStatus": "Pending",
+  "userType": "user"
+},
+{
+  "_id": {
+    "$oid": "69b541fa8387db9d83fc4cfa"
+  },
+  "userId": {
+    "$oid": "69b534ec2df8766a91d05555"
+  },
+  "productId": {
+    "$oid": "69b473d416496cd4206c90fa"
+  },
+  "brandId": {
+    "$oid": "69b45a89dd3d8bb81dcc44c4"
+  },
+  "brandName": "StepStyle Official",
+  "productName": "Adidas Ultraboost 22",
+  "quantity": 1,
+  "totalPrice": 180,
+  "address": "40 ,  SITA NAGAR, surat, GUJARAT, 395006, India",
+  "paymentMethod": "COD",
+  "orderStatus": "Delivered",
+  "approvedByBrand": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-03-14T11:09:46.942Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-15T06:47:18.842Z"
+  },
+  "paymentStatus": "Pending",
+  "userType": "user"
+},
+{
+  "_id": {
+    "$oid": "69b5438ad048cf1fbb14e634"
+  },
+  "userId": {
+    "$oid": "69b534ec2df8766a91d05555"
+  },
+  "productId": {
+    "$oid": "69b473d416496cd4206c90f9"
+  },
+  "brandId": {
+    "$oid": "69b45a89dd3d8bb81dcc44c4"
+  },
+  "brandName": "StepStyle Official",
+  "productName": "Product",
+  "quantity": 1,
+  "totalPrice": 150,
+  "address": "40 ,  SITA NAGAR, surat, GUJARAT, 395006, India",
+  "paymentMethod": "Card",
+  "paymentStatus": "Completed",
+  "orderStatus": "Cancelled",
+  "approvedByBrand": false,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-03-14T11:16:26.897Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-15T06:47:12.453Z"
+  },
+  "userType": "user"
+},
+{
+  "_id": {
+    "$oid": "69b653b34e90cd256d089cab"
+  },
+  "userId": {
+    "$oid": "69b46ddc6775a1fab3dba6d4"
+  },
+  "userType": "user",
+  "productId": {
+    "$oid": "69b473d416496cd4206c90f9"
+  },
+  "brandId": {
+    "$oid": "69b45a89dd3d8bb81dcc44c4"
+  },
+  "brandName": "StepStyle Official",
+  "productName": "Product",
+  "quantity": 1,
+  "totalPrice": 150,
+  "address": "ASD, Ahemdabad, GUJARAT, 395006, India",
+  "paymentMethod": "COD",
+  "paymentStatus": "Pending",
+  "orderStatus": "Cancelled",
+  "approvedByBrand": false,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-03-15T06:37:39.003Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-15T06:47:13.834Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b653ef4e90cd256d089cc3"
+  },
+  "userId": {
+    "$oid": "69b46ddc6775a1fab3dba6d4"
+  },
+  "userType": "user",
+  "productId": {
+    "$oid": "69b473d416496cd4206c90fd"
+  },
+  "brandId": {
+    "$oid": "69b45a89dd3d8bb81dcc44c4"
+  },
+  "brandName": "StepStyle Official",
+  "productName": "Product",
+  "quantity": 1,
+  "totalPrice": 170,
+  "address": "85 ,SIDHESHVAR SOCIETY, PUNAGAM, SURAT CITY,SURAT,GUJARAT, SURAT, GUJARAT, 395010, India",
+  "paymentMethod": "COD",
+  "paymentStatus": "Pending",
+  "orderStatus": "Cancelled",
+  "approvedByBrand": false,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-03-15T06:38:39.497Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-15T06:47:14.941Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b65b8aec97c8b2f44b1ad7"
+  },
+  "userId": {
+    "$oid": "69b46ddc6775a1fab3dba6d4"
+  },
+  "userType": "user",
+  "productId": {
+    "$oid": "69b57fd2c10e3efa9b4cc660"
+  },
+  "brandId": {
+    "$oid": "69b553f6e547a96a0c143536"
+  },
+  "brandName": "NIKE",
+  "productName": "Red Glitter",
+  "quantity": 1,
+  "totalPrice": 5000,
+  "address": "85 ,SIDHESHVAR SOCIETY, PUNAGAM, SURAT CITY,SURAT,GUJARAT, SURAT, GUJARAT, 395010, India",
+  "paymentMethod": "COD",
+  "paymentStatus": "Pending",
+  "orderStatus": "Delivered",
+  "approvedByBrand": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-03-15T07:11:06.314Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-15T07:22:12.469Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b65dfb496fcef656711caf"
+  },
+  "userId": {
+    "$oid": "69b534ec2df8766a91d05555"
+  },
+  "userType": "user",
+  "productId": {
+    "$oid": "69b57fd2c10e3efa9b4cc660"
+  },
+  "brandId": {
+    "$oid": "69b553f6e547a96a0c143536"
+  },
+  "brandName": "NIKE",
+  "productName": "Red Glitter",
+  "selectedSize": "7",
+  "quantity": 1,
+  "totalPrice": 5000,
+  "address": "85 ,SIDHESHVAR SOCIETY, PUNAGAM, SURAT CITY,SURAT,GUJARAT, SURAT, GUJARAT, 395010, India",
+  "paymentMethod": "COD",
+  "paymentStatus": "Pending",
+  "orderStatus": "Delivered",
+  "approvedByBrand": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-03-15T07:21:31.927Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-15T14:36:22.756Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b6c392efc9a307d589521d"
+  },
+  "userId": {
+    "$oid": "69b46ddc6775a1fab3dba6d4"
+  },
+  "userType": "user",
+  "productId": {
+    "$oid": "69b57fd2c10e3efa9b4cc660"
+  },
+  "brandId": {
+    "$oid": "69b553f6e547a96a0c143536"
+  },
+  "brandName": "NIKE",
+  "productName": "Red Glitter",
+  "selectedSize": "7",
+  "quantity": 1,
+  "totalPrice": 5000,
+  "address": "85 ,SIDHESHVAR SOCIETY, PUNAGAM, SURAT CITY,SURAT,GUJARAT, SURAT, GUJARAT, 395010, India",
+  "paymentMethod": "COD",
+  "paymentStatus": "Pending",
+  "orderStatus": "Delivered",
+  "approvedByBrand": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-03-15T14:34:58.235Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-18T03:34:40.392Z"
+  },
+  "discountAmount": 0
+},
+{
+  "_id": {
+    "$oid": "69b6c7c57d3ce3f3544bf2a2"
+  },
+  "userId": {
+    "$oid": "69b534ec2df8766a91d05555"
+  },
+  "userType": "user",
+  "productId": {
+    "$oid": "69b473d416496cd4206c90fa"
+  },
+  "brandId": {
+    "$oid": "69b45a89dd3d8bb81dcc44c4"
+  },
+  "brandName": "StepStyle Official",
+  "productName": "Adidas Ultraboost 22",
+  "selectedSize": "9",
+  "quantity": 1,
+  "totalPrice": 136.8,
+  "address": "85 ,SIDHESHVAR SOCIETY, PUNAGAM, SURAT CITY,SURAT,GUJARAT, SURAT, GUJARAT, 395010, India",
+  "paymentMethod": "COD",
+  "paymentStatus": "Pending",
+  "orderStatus": "Pending",
+  "approvedByBrand": false,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-03-15T14:52:53.488Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-15T14:52:53.488Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b6cceff02b3c56da4c28f5"
+  },
+  "userId": {
+    "$oid": "69b534ec2df8766a91d05555"
+  },
+  "userType": "user",
+  "productId": {
+    "$oid": "69b473d416496cd4206c90fa"
+  },
+  "brandId": {
+    "$oid": "69b45a89dd3d8bb81dcc44c4"
+  },
+  "brandName": "StepStyle Official",
+  "productName": "Adidas Ultraboost 22",
+  "selectedSize": "9",
+  "quantity": 1,
+  "totalPrice": 153,
+  "discountAmount": 27,
+  "address": "85 ,SIDHESHVAR SOCIETY, PUNAGAM, SURAT CITY,SURAT,GUJARAT, SURAT, GUJARAT, 395006, India",
+  "paymentMethod": "COD",
+  "paymentStatus": "Pending",
+  "orderStatus": "Pending",
+  "approvedByBrand": false,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-03-15T15:14:55.209Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-15T15:14:55.209Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b7877a7e4105168b0ac9e6"
+  },
+  "userId": {
+    "$oid": "69b7872b7e4105168b0ac9c1"
+  },
+  "userType": "user",
+  "productId": {
+    "$oid": "69b700b54f771dc5bff26ead"
+  },
+  "brandId": {
+    "$oid": "69b7001b4f771dc5bff26e95"
+  },
+  "brandName": "AR",
+  "productName": "Duke Women Printed Slidders",
+  "selectedSize": "10",
+  "quantity": 1,
+  "totalPrice": 599,
+  "discountAmount": 0,
+  "address": "12 , yoginagar soc, dabholi road ,surat, SURAT, GUJARAT, 395006, India",
+  "paymentMethod": "COD",
+  "paymentStatus": "Pending",
+  "orderStatus": "Pending",
+  "approvedByBrand": false,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-03-16T04:30:50.303Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-16T04:30:50.303Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b78f20199ca4b6ab647d5d"
+  },
+  "userId": {
+    "$oid": "69b7872b7e4105168b0ac9c1"
+  },
+  "userType": "user",
+  "productId": {
+    "$oid": "69b473d416496cd4206c9100"
+  },
+  "brandId": {
+    "$oid": "69b45a89dd3d8bb81dcc44c4"
+  },
+  "brandName": "StepStyle Official",
+  "productName": "New Balance 574 Metallic",
+  "selectedSize": "6",
+  "quantity": 1,
+  "totalPrice": 95,
+  "discountAmount": 0,
+  "address": "85 ,SIDHESHVAR SOCIETY, PUNAGAM, SURAT CITY,SURAT,GUJARAT, SURAT, GUJARAT, 395010, India",
+  "paymentMethod": "UPI",
+  "paymentStatus": "Completed",
+  "orderStatus": "Pending",
+  "approvedByBrand": false,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-03-16T05:03:28.291Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-16T05:03:28.291Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b78f20199ca4b6ab647d5e"
+  },
+  "userId": {
+    "$oid": "69b7872b7e4105168b0ac9c1"
+  },
+  "userType": "user",
+  "productId": {
+    "$oid": "69b700b54f771dc5bff26ead"
+  },
+  "brandId": {
+    "$oid": "69b7001b4f771dc5bff26e95"
+  },
+  "brandName": "AR",
+  "productName": "Duke Women Printed Slidders",
+  "selectedSize": "6",
+  "quantity": 1,
+  "totalPrice": 599,
+  "discountAmount": 0,
+  "address": "85 ,SIDHESHVAR SOCIETY, PUNAGAM, SURAT CITY,SURAT,GUJARAT, SURAT, GUJARAT, 395010, India",
+  "paymentMethod": "UPI",
+  "paymentStatus": "Completed",
+  "orderStatus": "Pending",
+  "approvedByBrand": false,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-03-16T05:03:28.291Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-16T05:03:28.291Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b78f70199ca4b6ab647d7a"
+  },
+  "userId": {
+    "$oid": "69b7872b7e4105168b0ac9c1"
+  },
+  "userType": "user",
+  "productId": {
+    "$oid": "69b473d416496cd4206c9100"
+  },
+  "brandId": {
+    "$oid": "69b45a89dd3d8bb81dcc44c4"
+  },
+  "brandName": "StepStyle Official",
+  "productName": "New Balance 574 Metallic",
+  "selectedSize": "6",
+  "quantity": 1,
+  "totalPrice": 67.45,
+  "discountAmount": 27.55,
+  "address": "85 ,SIDHESHVAR SOCIETY, PUNAGAM, SURAT CITY,SURAT,GUJARAT, SURAT, GUJARAT, 395010, India",
+  "paymentMethod": "COD",
+  "paymentStatus": "Pending",
+  "orderStatus": "Pending",
+  "approvedByBrand": false,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-03-16T05:04:48.246Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-16T05:04:48.246Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b78fc8199ca4b6ab647d93"
+  },
+  "userId": {
+    "$oid": "69b7872b7e4105168b0ac9c1"
+  },
+  "userType": "user",
+  "productId": {
+    "$oid": "69b473d416496cd4206c9100"
+  },
+  "brandId": {
+    "$oid": "69b45a89dd3d8bb81dcc44c4"
+  },
+  "brandName": "StepStyle Official",
+  "productName": "New Balance 574 Metallic",
+  "selectedSize": "6",
+  "quantity": 1,
+  "totalPrice": 81.7,
+  "discountAmount": 13.3,
+  "address": "85 ,SIDHESHVAR SOCIETY, PUNAGAM, SURAT CITY,SURAT,GUJARAT, SURAT, GUJARAT, 395010, India",
+  "paymentMethod": "UPI",
+  "paymentStatus": "Completed",
+  "orderStatus": "Pending",
+  "approvedByBrand": false,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-03-16T05:06:16.664Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-16T05:06:16.664Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b79033199ca4b6ab647dac"
+  },
+  "userId": {
+    "$oid": "69b7872b7e4105168b0ac9c1"
+  },
+  "userType": "user",
+  "productId": {
+    "$oid": "69b473d416496cd4206c90fa"
+  },
+  "brandId": {
+    "$oid": "69b45a89dd3d8bb81dcc44c4"
+  },
+  "brandName": "StepStyle Official",
+  "productName": "Adidas Ultraboost 22",
+  "selectedSize": "9",
+  "quantity": 1,
+  "totalPrice": 131.4,
+  "discountAmount": 48.6,
+  "address": "85 ,SIDHESHVAR SOCIETY, PUNAGAM, SURAT CITY,SURAT,GUJARAT, SURAT, GUJARAT, 395010, India",
+  "paymentMethod": "Card",
+  "paymentStatus": "Completed",
+  "orderStatus": "Pending",
+  "approvedByBrand": false,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-03-16T05:08:03.780Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-16T05:08:03.780Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69ba1e51edfcf35ff9ec9af8"
+  },
+  "userId": {
+    "$oid": "69b46ddc6775a1fab3dba6d4"
+  },
+  "userType": "user",
+  "productId": {
+    "$oid": "69b700b54f771dc5bff26ead"
+  },
+  "brandId": {
+    "$oid": "69b7001b4f771dc5bff26e95"
+  },
+  "brandName": "AR",
+  "productName": "Duke Women Printed Slidders",
+  "selectedSize": "8",
+  "quantity": 1,
+  "totalPrice": 467.22,
+  "discountAmount": 131.78,
+  "address": "asdfg, SURAT, GUJARAT, 395010, India",
+  "paymentMethod": "Card",
+  "paymentStatus": "Completed",
+  "orderStatus": "Delivered",
+  "approvedByBrand": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-03-18T03:38:57.690Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-18T03:40:52.063Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69ba4be1d29a77508ac4fb45"
+  },
+  "userId": {
+    "$oid": "69b46ddc6775a1fab3dba6d4"
+  },
+  "userType": "user",
+  "productId": {
+    "$oid": "69b700b54f771dc5bff26ead"
+  },
+  "brandId": {
+    "$oid": "69b7001b4f771dc5bff26e95"
+  },
+  "brandName": "AR",
+  "productName": "Duke Women Printed Slidders",
+  "selectedSize": "9",
+  "quantity": 1,
+  "totalPrice": 533.11,
+  "discountAmount": 65.89,
+  "address": "asdfg, SURAT, GUJARAT, 395010, India",
+  "paymentMethod": "Card",
+  "paymentStatus": "Completed",
+  "orderStatus": "Delivered",
+  "approvedByBrand": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-03-18T06:53:21.478Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-18T06:58:06.355Z"
+  }
+}]

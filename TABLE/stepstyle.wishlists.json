@@ -1,0 +1,60 @@
+[{
+  "_id": {
+    "$oid": "69b6840d1acef50bd5c78a68"
+  },
+  "userId": {
+    "$oid": "69b534ec2df8766a91d05555"
+  },
+  "userType": "User",
+  "products": [
+    {
+      "productId": {
+        "$oid": "69b473d416496cd4206c90fa"
+      },
+      "_id": {
+        "$oid": "69b6851c1acef50bd5c78a76"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-03-15T10:03:57.300Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-23T09:08:49.703Z"
+  },
+  "__v": 4
+},
+{
+  "_id": {
+    "$oid": "69b787497e4105168b0ac9d9"
+  },
+  "userId": {
+    "$oid": "69b7872b7e4105168b0ac9c1"
+  },
+  "userType": "User",
+  "products": [],
+  "createdAt": {
+    "$date": "2026-03-16T04:30:01.075Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-16T06:05:28.733Z"
+  },
+  "__v": 3
+},
+{
+  "_id": {
+    "$oid": "69ba1df9edfcf35ff9ec9ae9"
+  },
+  "userId": {
+    "$oid": "69b46ddc6775a1fab3dba6d4"
+  },
+  "userType": "User",
+  "products": [],
+  "createdAt": {
+    "$date": "2026-03-18T03:37:29.412Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-18T06:58:29.459Z"
+  },
+  "__v": 3
+}]

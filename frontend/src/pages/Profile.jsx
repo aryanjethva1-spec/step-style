@@ -1,13 +1,13 @@
 import React, { useState, useContext, useEffect } from 'react';
-import { Container, Row, Col, Form, Button, Card, Alert, Image, Badge, Breadcrumb, Spinner, Modal } from 'react-bootstrap';
+import { Container, Row, Col, Form, Button, Card, Alert, Image, Badge, Spinner, Modal } from 'react-bootstrap';
 import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../context/AuthContext';
 import { WishlistContext } from '../context/WishlistContext';
 import api, { BASE_URL } from '../services/api';
 import { 
     FaUser, FaEnvelope, FaPhone, FaVenusMars, FaShieldAlt, 
-    FaMapMarkerAlt, FaTrash, FaEdit, FaPlus, FaShoppingBag, 
-    FaHeart, FaStar, FaCamera, FaCheckCircle, FaExclamationCircle
+    FaMapMarkerAlt, FaEdit, FaPlus, FaShoppingBag, 
+    FaHeart, FaStar, FaCamera, FaCheckCircle, FaExclamationCircle, FaTimes, FaSave
 } from 'react-icons/fa';
 
 import UserLayout from '../dashboards/UserLayout';
@@ -16,6 +16,8 @@ const Profile = () => {
     const { user, brand, updateProfile, loading: authLoading } = useContext(AuthContext);
     const { wishlist } = useContext(WishlistContext);
     const navigate = useNavigate();
+
+    const [isEditing, setIsEditing] = useState(false);
 
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
@@ -66,6 +68,18 @@ const Profile = () => {
         }
     };
 
+    const handleCancelEdit = () => {
+        // Reset form fields back to current user data
+        if (user) {
+            setName(user.name || '');
+            setContact(user.contact || '');
+            setGender(user.gender || 'Male');
+            setImage(user.image || '');
+        }
+        setIsEditing(false);
+        setError(null);
+    };
+
     const uploadFileHandler = async (e) => {
         const file = e.target.files[0];
         const formData = new FormData();
@@ -106,6 +120,7 @@ const Profile = () => {
         setLoading(false);
         if (res.success) {
             setMessage('Profile updated successfully');
+            setIsEditing(false);
             setTimeout(() => setMessage(null), 3000);
         } else {
             setError(res.message);
@@ -138,32 +153,10 @@ const Profile = () => {
         }
     };
 
-    const handleDeleteAddress = async () => {
-        if (!window.confirm('Are you sure you want to delete your saved address?')) return;
-        
-        setLoading(true);
-        const res = await updateProfile({
-            ...user,
-            addressLine1: '',
-            city: '',
-            state: '',
-            pincode: '',
-            country: 'India'
-        });
-        setLoading(false);
 
-        if (res.success) {
-            setAddressLine1('');
-            setCity('');
-            setState('');
-            setPincode('');
-            setCountry('India');
-            setMessage('Address deleted successfully');
-            setTimeout(() => setMessage(null), 3000);
-        } else {
-            setError(res.message);
-        }
-    };
+    const profileImageSrc = image
+        ? (image.startsWith('http') ? image : `${BASE_URL}${image}`)
+        : 'https://via.placeholder.com/150';
 
     if (authLoading) return <div className="text-center py-5"><Spinner animation="border" variant="danger" /></div>;
 
@@ -178,7 +171,7 @@ const Profile = () => {
                     {/* Left Column: Stats & Security */}
                     {user?.role !== 'admin' && !brand && (
                         <Col lg={4} className="order-lg-2">
-                        {/* 7. Account Statistics */}
+                        {/* Account Statistics */}
                         <div className="mb-4 fade-in-right">
                             <h5 className="fw-black text-uppercase border-start border-danger border-4 ps-3 mb-4 letter-spacing-1">Activity</h5>
                             <Row className="g-3">
@@ -199,7 +192,7 @@ const Profile = () => {
                             </Row>
                         </div>
 
-                        {/* 8. Profile Security Section */}
+                        {/* Profile Security Section */}
                         <div className="fade-in-right" style={{ animationDelay: '0.2s' }}>
                             <h5 className="fw-black text-uppercase border-start border-danger border-4 ps-3 mb-4 letter-spacing-1">Security Status</h5>
                             <Card className="border-0 shadow-sm rounded-4 mb-4">
@@ -225,105 +218,175 @@ const Profile = () => {
                     {/* Right Column: Profile Info & Addresses */}
                     <Col lg={user?.role === 'admin' || brand ? 12 : 8} className="order-lg-1">
                         <div className="mb-5 fade-in-left">
-                            <h5 className="fw-black text-uppercase border-start border-danger border-4 ps-3 mb-4 letter-spacing-1">Personal Details</h5>
+                            {/* Section header with Edit Profile button */}
+                            <div className="d-flex justify-content-between align-items-center mb-4">
+                                <h5 className="fw-black text-uppercase border-start border-danger border-4 ps-3 mb-0 letter-spacing-1">Personal Details</h5>
+                                {!isEditing && (
+                                    <Button
+                                        variant="danger"
+                                        className="rounded-pill px-4 py-2 fw-bold d-flex align-items-center gap-2 shadow-sm"
+                                        onClick={() => setIsEditing(true)}
+                                    >
+                                        <FaEdit /> Edit Profile
+                                    </Button>
+                                )}
+                            </div>
+
                             <Card className="border-0 shadow-sm rounded-4 overflow-hidden">
                                 <Card.Body className="p-4 p-md-5">
-                                    <Form onSubmit={submitHandler}>
-                                        <div className="text-center mb-5">
-                                            <div className="position-relative d-inline-block">
-                                                <Image 
-                                                    src={image ? (image.startsWith('http') ? image : `${BASE_URL}${image}`) : 'https://via.placeholder.com/150'} 
-                                                    roundedCircle 
+                                    {/* ── VIEW MODE ── */}
+                                    {!isEditing ? (
+                                        <div>
+                                            {/* Avatar */}
+                                            <div className="text-center mb-5">
+                                                <Image
+                                                    src={profileImageSrc}
+                                                    roundedCircle
                                                     className="border border-4 border-white shadow-lg"
-                                                    style={{ width: '150px', height: '150px', objectFit: 'cover' }}
+                                                    style={{ width: '130px', height: '130px', objectFit: 'cover' }}
                                                 />
-                                                <label htmlFor="profile-upload" className="position-absolute bottom-0 end-0 bg-danger text-white rounded-circle p-3 cursor-pointer shadow hover-scale" style={{ width: '50px', height: '50px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                                                    <FaCamera />
-                                                    <input type="file" id="profile-upload" hidden onChange={uploadFileHandler} />
-                                                </label>
                                             </div>
-                                            {uploading && <div className="mt-3"><Spinner animation="border" size="sm" variant="danger" /> <small className="fw-bold text-danger ms-2">Uploading...</small></div>}
-                                        </div>
 
-                                        <Row className="g-4">
-                                            <Col md={6}>
-                                                <Form.Group controlId="name">
-                                                    <Form.Label className="small fw-black text-uppercase text-muted letter-spacing-1">Full Name</Form.Label>
-                                                    <div className="input-group">
-                                                        <span className="input-group-text bg-light border-0 rounded-start-pill ps-4 text-muted"><FaUser /></span>
-                                                        <Form.Control 
-                                                            type="text" 
-                                                            placeholder="Enter your name" 
-                                                            value={name} 
-                                                            onChange={(e) => setName(e.target.value)} 
-                                                            className="rounded-end-pill px-3 py-3 border-0 bg-light fw-bold"
-                                                        />
+                                            <Row className="g-4">
+                                                <Col md={6}>
+                                                    <p className="small fw-black text-uppercase text-muted letter-spacing-1 mb-1">Full Name</p>
+                                                    <div className="d-flex align-items-center gap-2 bg-light rounded-pill px-4 py-3">
+                                                        <FaUser className="text-muted" />
+                                                        <span className="fw-bold">{name || '—'}</span>
                                                     </div>
-                                                </Form.Group>
-                                            </Col>
-                                            <Col md={6}>
-                                                <Form.Group controlId="email">
-                                                    <Form.Label className="small fw-black text-uppercase text-muted letter-spacing-1">Email Address</Form.Label>
-                                                    <div className="input-group opacity-75">
-                                                        <span className="input-group-text bg-white border-0 rounded-start-pill ps-4 text-muted"><FaEnvelope /></span>
-                                                        <Form.Control 
-                                                            type="email" 
-                                                            value={email} 
-                                                            disabled 
-                                                            className="rounded-end-pill px-3 py-3 border-0 bg-white fw-bold"
-                                                        />
+                                                </Col>
+                                                <Col md={6}>
+                                                    <p className="small fw-black text-uppercase text-muted letter-spacing-1 mb-1">Email Address</p>
+                                                    <div className="d-flex align-items-center gap-2 bg-white rounded-pill px-4 py-3 border">
+                                                        <FaEnvelope className="text-muted" />
+                                                        <span className="fw-bold opacity-75">{email || '—'}</span>
                                                     </div>
-                                                </Form.Group>
-                                            </Col>
-                                            <Col md={6}>
-                                                <Form.Group controlId="contact">
-                                                    <Form.Label className="small fw-black text-uppercase text-muted letter-spacing-1">Phone Number</Form.Label>
-                                                    <div className="input-group">
-                                                        <span className="input-group-text bg-light border-0 rounded-start-pill ps-4 text-muted"><FaPhone /></span>
-                                                        <Form.Control 
-                                                            type="text" 
-                                                            placeholder="Your mobile number" 
-                                                            value={contact} 
-                                                            onChange={(e) => setContact(e.target.value)} 
-                                                            className="rounded-end-pill px-3 py-3 border-0 bg-light fw-bold"
-                                                        />
+                                                </Col>
+                                                <Col md={6}>
+                                                    <p className="small fw-black text-uppercase text-muted letter-spacing-1 mb-1">Phone Number</p>
+                                                    <div className="d-flex align-items-center gap-2 bg-light rounded-pill px-4 py-3">
+                                                        <FaPhone className="text-muted" />
+                                                        <span className="fw-bold">{contact || '—'}</span>
                                                     </div>
-                                                </Form.Group>
-                                            </Col>
-                                            <Col md={6}>
-                                                <Form.Group controlId="gender">
-                                                    <Form.Label className="small fw-black text-uppercase text-muted letter-spacing-1">Gender</Form.Label>
-                                                    <div className="input-group">
-                                                        <span className="input-group-text bg-light border-0 rounded-start-pill ps-4 text-muted"><FaVenusMars /></span>
-                                                        <Form.Select 
-                                                            value={gender} 
-                                                            onChange={(e) => setGender(e.target.value)}
-                                                            className="rounded-end-pill px-3 py-3 border-0 bg-light fw-bold shadow-none"
-                                                        >
-                                                            <option value="Male">Male</option>
-                                                            <option value="Female">Female</option>
-                                                        </Form.Select>
+                                                </Col>
+                                                <Col md={6}>
+                                                    <p className="small fw-black text-uppercase text-muted letter-spacing-1 mb-1">Gender</p>
+                                                    <div className="d-flex align-items-center gap-2 bg-light rounded-pill px-4 py-3">
+                                                        <FaVenusMars className="text-muted" />
+                                                        <span className="fw-bold">{gender || '—'}</span>
                                                     </div>
-                                                </Form.Group>
-                                            </Col>
-                                        </Row>
-
-                                        <div className="text-end mt-5">
-                                            <Button 
-                                                variant="danger" 
-                                                type="submit" 
-                                                className="rounded-pill px-5 py-3 fw-black text-uppercase letter-spacing-1 shadow hover-scale"
-                                                disabled={loading}
-                                            >
-                                                {loading ? <Spinner animation="border" size="sm" /> : 'Save Profile Changes'}
-                                            </Button>
+                                                </Col>
+                                            </Row>
                                         </div>
-                                    </Form>
+                                    ) : (
+                                        /* ── EDIT MODE ── */
+                                        <Form onSubmit={submitHandler}>
+                                            {/* Profile Photo */}
+                                            <div className="text-center mb-5">
+                                                <div className="position-relative d-inline-block">
+                                                    <Image 
+                                                        src={profileImageSrc}
+                                                        roundedCircle 
+                                                        className="border border-4 border-white shadow-lg"
+                                                        style={{ width: '150px', height: '150px', objectFit: 'cover' }}
+                                                    />
+                                                    <label htmlFor="profile-upload" className="position-absolute bottom-0 end-0 bg-danger text-white rounded-circle p-3 cursor-pointer shadow hover-scale" style={{ width: '50px', height: '50px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                                                        <FaCamera />
+                                                        <input type="file" id="profile-upload" hidden onChange={uploadFileHandler} />
+                                                    </label>
+                                                </div>
+                                                {uploading && <div className="mt-3"><Spinner animation="border" size="sm" variant="danger" /> <small className="fw-bold text-danger ms-2">Uploading...</small></div>}
+                                            </div>
+
+                                            <Row className="g-4">
+                                                <Col md={6}>
+                                                    <Form.Group controlId="name">
+                                                        <Form.Label className="small fw-black text-uppercase text-muted letter-spacing-1">Full Name</Form.Label>
+                                                        <div className="input-group">
+                                                            <span className="input-group-text bg-light border-0 rounded-start-pill ps-4 text-muted"><FaUser /></span>
+                                                            <Form.Control 
+                                                                type="text" 
+                                                                placeholder="Enter your name" 
+                                                                value={name} 
+                                                                onChange={(e) => setName(e.target.value)} 
+                                                                className="rounded-end-pill px-3 py-3 border-0 bg-light fw-bold"
+                                                            />
+                                                        </div>
+                                                    </Form.Group>
+                                                </Col>
+                                                <Col md={6}>
+                                                    <Form.Group controlId="email">
+                                                        <Form.Label className="small fw-black text-uppercase text-muted letter-spacing-1">Email Address</Form.Label>
+                                                        <div className="input-group opacity-75">
+                                                            <span className="input-group-text bg-white border-0 rounded-start-pill ps-4 text-muted"><FaEnvelope /></span>
+                                                            <Form.Control 
+                                                                type="email" 
+                                                                value={email} 
+                                                                disabled 
+                                                                className="rounded-end-pill px-3 py-3 border-0 bg-white fw-bold"
+                                                            />
+                                                        </div>
+                                                    </Form.Group>
+                                                </Col>
+                                                <Col md={6}>
+                                                    <Form.Group controlId="contact">
+                                                        <Form.Label className="small fw-black text-uppercase text-muted letter-spacing-1">Phone Number</Form.Label>
+                                                        <div className="input-group">
+                                                            <span className="input-group-text bg-light border-0 rounded-start-pill ps-4 text-muted"><FaPhone /></span>
+                                                            <Form.Control 
+                                                                type="text" 
+                                                                placeholder="Your mobile number" 
+                                                                value={contact} 
+                                                                onChange={(e) => setContact(e.target.value)} 
+                                                                className="rounded-end-pill px-3 py-3 border-0 bg-light fw-bold"
+                                                            />
+                                                        </div>
+                                                    </Form.Group>
+                                                </Col>
+                                                <Col md={6}>
+                                                    <Form.Group controlId="gender">
+                                                        <Form.Label className="small fw-black text-uppercase text-muted letter-spacing-1">Gender</Form.Label>
+                                                        <div className="input-group">
+                                                            <span className="input-group-text bg-light border-0 rounded-start-pill ps-4 text-muted"><FaVenusMars /></span>
+                                                            <Form.Select 
+                                                                value={gender} 
+                                                                onChange={(e) => setGender(e.target.value)}
+                                                                className="rounded-end-pill px-3 py-3 border-0 bg-light fw-bold shadow-none"
+                                                            >
+                                                                <option value="Male">Male</option>
+                                                                <option value="Female">Female</option>
+                                                            </Form.Select>
+                                                        </div>
+                                                    </Form.Group>
+                                                </Col>
+                                            </Row>
+
+                                            <div className="d-flex justify-content-end gap-3 mt-5">
+                                                <Button
+                                                    variant="outline-secondary"
+                                                    type="button"
+                                                    className="rounded-pill px-4 py-3 fw-bold d-flex align-items-center gap-2"
+                                                    onClick={handleCancelEdit}
+                                                    disabled={loading}
+                                                >
+                                                    <FaTimes /> Cancel
+                                                </Button>
+                                                <Button 
+                                                    variant="danger" 
+                                                    type="submit" 
+                                                    className="rounded-pill px-5 py-3 fw-black text-uppercase letter-spacing-1 shadow hover-scale d-flex align-items-center gap-2"
+                                                    disabled={loading}
+                                                >
+                                                    {loading ? <Spinner animation="border" size="sm" /> : <><FaSave /> Save Changes</>}
+                                                </Button>
+                                            </div>
+                                        </Form>
+                                    )}
                                 </Card.Body>
                             </Card>
                         </div>
 
-                        {/* 5. Saved Address Section */}
+                        {/* Saved Address Section */}
                         {user?.role !== 'admin' && !brand && (
                             <div className="fade-in-left" style={{ animationDelay: '0.2s' }}>
                                 <div className="d-flex justify-content-between align-items-center mb-4">
@@ -355,13 +418,6 @@ const Profile = () => {
                                                 onClick={handleEditAddress}
                                             >
                                                 <FaEdit /> Edit Address
-                                            </Button>
-                                            <Button 
-                                                variant="outline-danger" 
-                                                className="rounded-pill px-3 fw-bold text-uppercase small d-flex align-items-center justify-content-center py-2"
-                                                onClick={handleDeleteAddress}
-                                            >
-                                                <FaTrash />
                                             </Button>
                                         </div>
                                     </Card.Body>
@@ -462,4 +518,3 @@ const Profile = () => {
 };
 
 export default Profile;
-

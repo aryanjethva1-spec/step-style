@@ -26,12 +26,11 @@ const BrandLayout = ({ children, title }) => {
         { path: '/brand/products', icon: <FaBox />, label: 'My Products' },
         { path: '/brand/add-product', icon: <FaPlusCircle />, label: 'Add Product' },
         { path: '/brand/orders', icon: <FaClipboardList />, label: 'Brand Orders' },
-        { path: '/brand/edit-profile', icon: <FaUserCircle />, label: 'Brand Profile' },
     ];
 
     const handleLogout = async () => {
-        await logoutBrand();
         navigate('/');
+        await logoutBrand();
     };
 
     if (authLoading) return <div className="text-center py-5"><div className="spinner-border text-danger"></div></div>;

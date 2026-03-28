@@ -18,9 +18,9 @@ const NavigationBar = () => {
 
     const handleLogout = async () => {
         closeNav();
+        navigate('/');
         if (user) await logoutUser();
         if (brand) await logoutBrand();
-        navigate('/');
     };
 
     return (
@@ -107,7 +107,7 @@ const NavigationBar = () => {
 
                                 {brand && (
                                     <NavDropdown title={<span><FaStore className="me-2 mb-1 text-danger" /> {brand.brandName}</span>} id="brand-nav" className="ms-3 fw-bold admin-dropdown no-caret">
-                                        <NavDropdown.Item as={Link} to="/brand/edit-profile" onClick={closeNav}>Edit Brand Profile</NavDropdown.Item>
+                                        <NavDropdown.Item as={Link} to="/brand/edit-profile" onClick={closeNav}>Brand Profile</NavDropdown.Item>
                                         <NavDropdown.Item as={Link} to="/brand/change-password" onClick={closeNav}>Change Password</NavDropdown.Item>
                                         <NavDropdown.Divider />
                                         <NavDropdown.Item onClick={handleLogout}>Logout</NavDropdown.Item>

@@ -1,0 +1,27 @@
+[{
+  "_id": {
+    "$oid": "69c61a1afc6f3f05ebd076ba"
+  },
+  "brandName": "parmar boothouse",
+  "email": "parmaryashraj1535@gmail.com",
+  "password": "$2b$10$vkP/JLVYlTk3p5P9GbWNCeciW/Yqw.tP4KDHEF4Qfy26OJkNd6Ji6",
+  "logo": "/uploads/image-1774590441354.jpg",
+  "description": "Luxury Brand only",
+  "status": "pending",
+  "ownerName": "Yashraj",
+  "username": "Parmar",
+  "address": "Mota varachha",
+  "city": "Surat",
+  "state": "Gujarat",
+  "pincode": "395006",
+  "country": "India",
+  "contact": "9978794919",
+  "gstNo": "1234567890",
+  "createdAt": {
+    "$date": "2026-03-27T05:48:10.359Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-27T05:48:10.359Z"
+  },
+  "__v": 0
+}]

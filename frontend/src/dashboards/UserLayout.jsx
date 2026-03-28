@@ -22,16 +22,16 @@ const UserLayout = ({ children, title }) => {
     }, [location.pathname]);
 
     const menuItems = [
-        { path: '/myorders', icon: <FaShoppingBag />, label: 'My Orders' },
+        ...(user?.role !== 'admin' ? [{ path: '/myorders', icon: <FaShoppingBag />, label: 'My Orders' }] : []),
         { path: '/profile', icon: <FaUserCircle />, label: 'My Profile' },
         { path: '/change-password', icon: <FaLock />, label: 'Security Setting' },
         { path: '/', icon: <FaHome />, label: 'Back to Shop' },
     ];
 
     const handleLogout = async () => {
+        navigate('/');
         if (user) await logoutUser();
         if (brand) await logoutBrand();
-        navigate('/');
     };
 
     if (authLoading) return <div className="text-center py-5"><div className="spinner-border text-danger"></div></div>;

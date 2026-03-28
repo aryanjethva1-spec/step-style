@@ -1,0 +1,99 @@
+[{
+  "_id": {
+    "$oid": "69b46ddc6775a1fab3dba6d4"
+  },
+  "name": "lax",
+  "email": "laxdiyora1221@gmail.com",
+  "password": "$2b$10$hhzNGfDgouF4V.JxXR4JBedEHRe7/KVEDM5AAbFXrZpJqisdR594K",
+  "role": "user",
+  "address": "41 , siddhipark society",
+  "contact": "9714137221",
+  "city": "SURAT",
+  "pincode": "395010",
+  "createdAt": {
+    "$date": "2026-03-13T20:04:44.088Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-28T05:47:12.375Z"
+  },
+  "__v": 0,
+  "addressLine1": "40, siddhipark soc., near janta aprtment, L.H. Road.",
+  "addressType": "Home",
+  "country": "India",
+  "state": "GUJARAT",
+  "gender": "Male",
+  "image": "/uploads/image-1774676165457.jpg"
+},
+{
+  "_id": {
+    "$oid": "69b473d416496cd4206c90f5"
+  },
+  "name": "System Admin",
+  "email": "admin@stepstyle.com",
+  "password": "$2b$10$70O9VDwHn0oSd685LV2Fx.mYkT8XjLpPoBukaDIE0XoQgWt3Ez4dK",
+  "role": "admin",
+  "addressType": "Home",
+  "createdAt": {
+    "$date": "2026-03-13T20:30:12.729Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-28T05:48:06.956Z"
+  },
+  "__v": 0,
+  "image": "/uploads/image-1773499458050.jpg",
+  "contact": "81402 57430",
+  "country": "India",
+  "gender": "Male"
+},
+{
+  "_id": {
+    "$oid": "69b534ec2df8766a91d05555"
+  },
+  "name": "ARUU",
+  "email": "aryanjethva1@gmail.com",
+  "password": "$2b$10$oCApI5CrZAlYu9o293CX3.F0CFOZVJnkor4hP5MfOl3X1vwr1vKWW",
+  "role": "user",
+  "addressLine1": "85 ,SIDHESHVAR SOCIETY, PUNAGAM, SURAT CITY,SURAT,GUJARAT",
+  "addressLine2": "NEAR SITANAGAR CHOWK",
+  "city": "SURAT",
+  "state": "GUJARAT",
+  "pincode": "395006",
+  "country": "India",
+  "addressType": "Home",
+  "landmark": "BOOT BHAVANI",
+  "contact": "09714137221",
+  "createdAt": {
+    "$date": "2026-03-14T10:14:04.355Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-18T06:55:41.062Z"
+  },
+  "__v": 0,
+  "gender": "Male"
+},
+{
+  "_id": {
+    "$oid": "69b7872b7e4105168b0ac9c1"
+  },
+  "name": "khushal",
+  "email": "khushalvariya3@gmail.com",
+  "password": "$2b$10$KnZjp2dL1Y598z4CZF1XHukMi/TOiBIWRal3YgADRaL0iWmNFchsy",
+  "role": "user",
+  "addressLine1": "12,yoginagar",
+  "addressLine2": "dabholi road ",
+  "city": "surat",
+  "state": "GUJARAT",
+  "pincode": "395010",
+  "country": "India",
+  "addressType": "Home",
+  "landmark": "",
+  "contact": "9023503332",
+  "gender": "Male",
+  "createdAt": {
+    "$date": "2026-03-16T04:29:31.021Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-16T04:29:31.021Z"
+  },
+  "__v": 0
+}]

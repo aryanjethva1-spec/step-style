@@ -53,7 +53,7 @@ const AdminLayout = ({ children, title }) => {
                 <Button
                     variant="light"
                     className="w-100 fw-bold rounded-pill p-3 shadow-sm border-0 text-danger d-flex align-items-center justify-content-center gap-2 mb-5"
-                    onClick={async () => { await logoutUser(); navigate('/'); }}
+                    onClick={async () => { navigate('/'); await logoutUser(); }}
                 >
                     <FaSignOutAlt /> Logout Admin
                 </Button>

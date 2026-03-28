@@ -1,0 +1,1045 @@
+[{
+  "_id": {
+    "$oid": "69b473d416496cd4206c90f9"
+  },
+  "name": "Nike Air Max 270",
+  "price": 150,
+  "category": "Sports",
+  "brandId": {
+    "$oid": "69b45a89dd3d8bb81dcc44c4"
+  },
+  "brandName": "StepStyle Official",
+  "description": "The Nike Air Max 270 is clean, sleek and lightweight. It provides ultimate comfort and style for your daily runs.",
+  "sizes": [
+    "7",
+    "8",
+    "9",
+    "10",
+    "11"
+  ],
+  "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80",
+  "stock": 50,
+  "rating": 4.5,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-03-13T20:30:12.822Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-16T18:53:45.733Z"
+  },
+  "footwearType": "Casual"
+},
+{
+  "_id": {
+    "$oid": "69b473d416496cd4206c90fa"
+  },
+  "name": "Adidas Ultraboost 22",
+  "price": 180,
+  "category": "Sports",
+  "brandId": {
+    "$oid": "69b45a89dd3d8bb81dcc44c4"
+  },
+  "brandName": "StepStyle Official",
+  "description": "Responsive cushioning and an adaptive fit make this the go-to running shoe for athletes.",
+  "sizes": [
+    "8",
+    "9",
+    "10",
+    "11"
+  ],
+  "image": "https://images.unsplash.com/photo-1587563871167-1ee9c731aefb?auto=format&fit=crop&w=800&q=80",
+  "stock": 45,
+  "rating": 4.9,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-03-13T20:30:12.822Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-13T20:30:12.822Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b473d416496cd4206c90fb"
+  },
+  "name": "Puma RS-X Bold",
+  "price": 120,
+  "category": "Casual",
+  "brandId": {
+    "$oid": "69b45a89dd3d8bb81dcc44c4"
+  },
+  "brandName": "StepStyle Official",
+  "description": "Retro-inspired design with a bulky silhouette and vibrant color accents.",
+  "sizes": [
+    "7",
+    "8",
+    "9",
+    "10"
+  ],
+  "image": "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=800&q=80",
+  "stock": 30,
+  "rating": 4.5,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-03-13T20:30:12.822Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-13T20:30:12.822Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b473d416496cd4206c90fc"
+  },
+  "name": "Nike Dunk Low Panda",
+  "price": 110,
+  "category": "Casual",
+  "brandId": {
+    "$oid": "69b45a89dd3d8bb81dcc44c4"
+  },
+  "brandName": "StepStyle Official",
+  "description": "The iconic black and white colorway that goes with everything.",
+  "sizes": [
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11"
+  ],
+  "image": "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=800&q=80",
+  "stock": 100,
+  "rating": 4.9,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-03-13T20:30:12.822Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-13T20:30:12.822Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b473d416496cd4206c90fd"
+  },
+  "name": "Jordan 1 Retro High",
+  "price": 170,
+  "category": "Casual",
+  "brandId": {
+    "$oid": "69b45a89dd3d8bb81dcc44c4"
+  },
+  "brandName": "StepStyle Official",
+  "description": "The classic sneaker that started it all. Premium leather and timeless design.",
+  "sizes": [
+    "9",
+    "10",
+    "11",
+    "12"
+  ],
+  "image": "/uploads/image-1773501427457.jpg",
+  "stock": 20,
+  "rating": 5,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-03-13T20:30:12.822Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-14T15:17:10.346Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b473d416496cd4206c90fe"
+  },
+  "name": "Adidas Stan Smith",
+  "price": 90,
+  "category": "Casual",
+  "brandId": {
+    "$oid": "69b45a89dd3d8bb81dcc44c4"
+  },
+  "brandName": "StepStyle Official",
+  "description": "Simplicity is key. A clean, classic white trainer with green accents.",
+  "sizes": [
+    "5",
+    "6",
+    "7",
+    "8",
+    "9"
+  ],
+  "image": "https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=800&q=80",
+  "stock": 60,
+  "rating": 4.7,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-03-13T20:30:12.822Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-13T20:30:12.822Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b473d416496cd4206c90ff"
+  },
+  "name": "Vans Old Skool",
+  "price": 65,
+  "category": "Casual",
+  "brandId": {
+    "$oid": "69b45a89dd3d8bb81dcc44c4"
+  },
+  "brandName": "StepStyle Official",
+  "description": "The classic skate shoe with the iconic side stripe.",
+  "sizes": [
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10"
+  ],
+  "image": "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=800&q=80",
+  "stock": 80,
+  "rating": 4.6,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-03-13T20:30:12.822Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-13T20:30:12.822Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b473d416496cd4206c9100"
+  },
+  "name": "New Balance 574 Metallic",
+  "price": 95,
+  "category": "Casual",
+  "brandId": {
+    "$oid": "69b45a89dd3d8bb81dcc44c4"
+  },
+  "brandName": "StepStyle Official",
+  "description": "Modern comfort meets legendary style.",
+  "sizes": [
+    "6",
+    "7",
+    "8",
+    "9"
+  ],
+  "image": "https://images.unsplash.com/photo-1539185441755-769473a23570?auto=format&fit=crop&w=800&q=80",
+  "stock": 40,
+  "rating": 4.4,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-03-13T20:30:12.822Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-13T20:30:12.822Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b57fd2c10e3efa9b4cc660"
+  },
+  "name": "Red Glitter",
+  "price": 5000,
+  "category": "Women",
+  "footwearType": "Heels",
+  "brandId": {
+    "$oid": "69b553f6e547a96a0c143536"
+  },
+  "brandName": "NIKE",
+  "description": "The Amita sling back elevates a classic silhouette with a graphic 85mm kick heel. Italian-crafted in patent nappa leather with a glossy finish, this combination crafts a cohesive aesthetic that is effortlessly chic. The deep V on the upper of this style is intersected by a delicate, elasticated pearl-adorned strap complemented by our signature emblem.\n",
+  "sizes": [
+    "7",
+    "8",
+    "9",
+    "10"
+  ],
+  "image": "/uploads/image-1773502291079.jpg",
+  "stock": 0,
+  "rating": 0,
+  "createdAt": {
+    "$date": "2026-03-14T15:33:38.334Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-15T14:36:15.404Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69b700b54f771dc5bff26ead"
+  },
+  "name": "Duke Women Printed Slidders",
+  "price": 599,
+  "category": "Women",
+  "footwearType": "Sliders",
+  "brandId": {
+    "$oid": "69b7001b4f771dc5bff26e95"
+  },
+  "brandName": "AR",
+  "description": "Expertly crafted with synthetic EVA fabric, our Duke Women Printed Sliders provide both style and comfort. The durable material ensures long-lasting wear, making them the perfect choice for any occasion. Experience the ultimate combination of fashion and functionality with these must-have slippers.",
+  "sizes": [
+    "6",
+    "7",
+    "8",
+    "9",
+    "10"
+  ],
+  "image": "/uploads/image-1773600909806.jpg",
+  "stock": 26,
+  "rating": 0,
+  "createdAt": {
+    "$date": "2026-03-15T18:55:49.751Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-18T06:57:14.954Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69be72f845298dfe7e4e58a9"
+  },
+  "name": "Loffer shoes",
+  "price": 799,
+  "category": "Men",
+  "footwearType": "Formal Shoes",
+  "brandId": {
+    "$oid": "69b7001b4f771dc5bff26e95"
+  },
+  "brandName": "AR",
+  "description": "Looks classy",
+  "sizes": [
+    "6",
+    "7",
+    "8",
+    "9"
+  ],
+  "image": "/uploads/image-1774088878484.jpg",
+  "stock": 3,
+  "rating": 0,
+  "createdAt": {
+    "$date": "2026-03-21T10:29:12.732Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-21T10:29:12.732Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69be73e045298dfe7e4e58d2"
+  },
+  "name": "FZM Men Business Shoes Casual Peas Shoe Male Suit Shoes ",
+  "price": 899,
+  "category": "Men",
+  "footwearType": "Formal Shoes",
+  "brandId": {
+    "$oid": "69b7001b4f771dc5bff26e95"
+  },
+  "brandName": "AR",
+  "description": "Men Business Shoes Casual Peas Shoe Male Suit Shoes Walking Driver Footwear",
+  "sizes": [
+    "7",
+    "8",
+    "9",
+    "10"
+  ],
+  "image": "/uploads/image-1774089070835.jpg",
+  "stock": 12,
+  "rating": 0,
+  "createdAt": {
+    "$date": "2026-03-21T10:33:04.206Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-21T10:33:04.206Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69be745d45298dfe7e4e58d6"
+  },
+  "name": "Ethics Men's Stylish Shoes ",
+  "price": 1199,
+  "category": "Men",
+  "footwearType": "Sports Shoes",
+  "brandId": {
+    "$oid": "69b7001b4f771dc5bff26e95"
+  },
+  "brandName": "AR",
+  "description": "Extremely lightweight material, these are nice shoes for everyday use, or wedding .this unique design and stylish shoes are to maximize your fashion.",
+  "sizes": [
+    "8",
+    "9",
+    "10"
+  ],
+  "image": "/uploads/image-1774089221518.jpg",
+  "stock": 12,
+  "rating": 0,
+  "createdAt": {
+    "$date": "2026-03-21T10:35:09.807Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-21T10:35:09.807Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69be752c45298dfe7e4e58da"
+  },
+  "name": "Formal Oxford Shoes  ",
+  "price": 1599,
+  "category": "Men",
+  "footwearType": "Formal Shoes",
+  "brandId": {
+    "$oid": "69b7001b4f771dc5bff26e95"
+  },
+  "brandName": "AR",
+  "description": "\nEvery man should own at least one pair of smart black Oxfords. With its closed facings and elegant, refined profile, this style perfectly complements a dark tailored suit. The classic Oxford is distinguished by its elongated toe, five eyelet lace-up front and three part panelled construction of toe cap, heel quarters and vamp (the middle section) sewn onto the shoe. Their conservative, yet assured silhouette is perfect for a wedding, formal occasion or your next board meeting",
+  "sizes": [
+    "7",
+    "8",
+    "9",
+    "10"
+  ],
+  "image": "/uploads/image-1774089346192.jpg",
+  "stock": 8,
+  "rating": 5,
+  "createdAt": {
+    "$date": "2026-03-21T10:38:36.921Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-23T09:12:43.250Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69be758f45298dfe7e4e58e4"
+  },
+  "name": "Formal Genuine Leather Derby Shoes for Men PG ",
+  "price": 1299,
+  "category": "Men",
+  "footwearType": "Formal Shoes",
+  "brandId": {
+    "$oid": "69b7001b4f771dc5bff26e95"
+  },
+  "brandName": "AR",
+  "description": "Step into structured elegance with Zoom Shoes, crafted in premium leather. Whether you're headed to a brunch or an office day, the memory foam cushioned insole ensures softness and support with every step. The breathable, odour-proof leather keeps your feet cool and fresh in the heat, while the TPR anti-slip sole offers steady grip and confident movement on all surfaces. From desk to dinner and beyond, these footwear are your go-to for breathable comfort, polished styling, and wardrobe flexibility.",
+  "sizes": [
+    "7",
+    "8",
+    "9",
+    "10"
+  ],
+  "image": "/uploads/image-1774089558801.jpg",
+  "stock": 8,
+  "rating": 3,
+  "createdAt": {
+    "$date": "2026-03-21T10:40:15.405Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-23T09:11:27.053Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69be76d345298dfe7e4e58e8"
+  },
+  "name": "White sneakers shoes ",
+  "price": 999,
+  "category": "Women",
+  "footwearType": "Sneakers",
+  "brandId": {
+    "$oid": "69b7001b4f771dc5bff26e95"
+  },
+  "brandName": "AR",
+  "description": "Casual footwear - white leather sneakers shoes and girls crossed legs on nude background. Layout with free copy (text) space.\n\n",
+  "sizes": [
+    "5",
+    "6",
+    "7",
+    "8"
+  ],
+  "image": "/uploads/image-1774089839054.jpg",
+  "stock": 20,
+  "rating": 0,
+  "createdAt": {
+    "$date": "2026-03-21T10:45:39.872Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-21T10:45:39.872Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69be781545298dfe7e4e58ec"
+  },
+  "name": "Lady Horsebit leather platform sandals",
+  "price": 1699,
+  "category": "Women",
+  "footwearType": "Sandals",
+  "brandId": {
+    "$oid": "69b7001b4f771dc5bff26e95"
+  },
+  "brandName": "AR",
+  "description": "Premium Things looks crazy\n",
+  "sizes": [
+    "6",
+    "7",
+    "8",
+    "9"
+  ],
+  "image": "/uploads/image-1774089957309.jpg",
+  "stock": 15,
+  "rating": 0,
+  "createdAt": {
+    "$date": "2026-03-21T10:51:01.495Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-21T10:51:01.495Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69be792a45298dfe7e4e58f1"
+  },
+  "name": "Women Round Toe Beverly 3.0 Sneakers",
+  "price": 1799,
+  "category": "Women",
+  "footwearType": "Sneakers",
+  "brandId": {
+    "$oid": "69b7001b4f771dc5bff26e95"
+  },
+  "brandName": "AR",
+  "description": " From the Beverly 3.0 collection, these casual men's shoes in a solid pattern deliver sleek sophistication and effortless versatility for any casual setting.",
+  "sizes": [
+    "6",
+    "7",
+    "8",
+    "9",
+    "10"
+  ],
+  "image": "/uploads/image-1774090308179.jpg",
+  "stock": 8,
+  "rating": 0,
+  "createdAt": {
+    "$date": "2026-03-21T10:55:38.585Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-21T10:55:38.585Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69be7a4245298dfe7e4e58fb"
+  },
+  "name": " A Dose Of Glam To Your Attire With These Stunning Brown Heels",
+  "price": 1199,
+  "category": "Women",
+  "footwearType": "Heels",
+  "brandId": {
+    "$oid": "69b7001b4f771dc5bff26e95"
+  },
+  "brandName": "AR",
+  "description": "Earthy shades have always been a favourite part of our fashion repertoire. Be it apparel or footwear, earthy shades are always a safe option when it comes to making a stellar statement effortlessly. Glamming up is always a delight for every fashionista and our dress up session is absolutely incomplete until we team up our outfit with chic heels and this is when we need stunning brown heels to be our fashion rescue always. Be it a casual brunch or an office board room meeting, brown heels are a great way to accentuate your attire. And to help you pick the best ones, we have curated a list of brown heels to stock up right away.",
+  "sizes": [
+    "6",
+    "7",
+    "8",
+    "9"
+  ],
+  "image": "/uploads/image-1774090649485.jpg",
+  "stock": 35,
+  "rating": 0,
+  "createdAt": {
+    "$date": "2026-03-21T11:00:18.215Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-21T11:00:18.215Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69be7fee45298dfe7e4e593c"
+  },
+  "name": "Children's Anti Slip and Wear Resistant Fashion Velcro Beach Shoes Sandals and Slippers",
+  "price": 599,
+  "category": "Kids",
+  "footwearType": "Sandals",
+  "brandId": {
+    "$oid": "69b553f6e547a96a0c143536"
+  },
+  "brandName": "NIKE",
+  "description": "Product Type: Kids Sandals\nFootwear Type:beach slippers",
+  "sizes": [
+    "4",
+    "5",
+    "6"
+  ],
+  "image": "/uploads/image-1774092140802.jpeg",
+  "stock": 22,
+  "rating": 0,
+  "createdAt": {
+    "$date": "2026-03-21T11:24:30.223Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-21T11:24:30.223Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69be80cd45298dfe7e4e5946"
+  },
+  "name": "Kids Keen Seacamp Ii Cnx Preschool",
+  "price": 699,
+  "category": "Kids",
+  "footwearType": "Shoes",
+  "brandId": {
+    "$oid": "69b553f6e547a96a0c143536"
+  },
+  "brandName": "NIKE",
+  "description": "The original hybrid water sandal for kids, made lighter and more flexible. A water-friendly fave from winter vacation to summer camp.\n\nWashable polyester webbing upper\nLace-lock bungee system with adjustable hook-and-loop strap\nEVA insole with arch support for all-day comfort\nMachine-washable for easy care\nNon-marking KEEN.FUSION rubber outsole\nMulti-directional lug pattern provides superior traction",
+  "sizes": [
+    "3",
+    "4",
+    "5",
+    "6",
+    "7"
+  ],
+  "image": "/uploads/image-1774092398764.jpg",
+  "stock": 14,
+  "rating": 0,
+  "createdAt": {
+    "$date": "2026-03-21T11:28:13.141Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-21T11:28:13.141Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69be820d45298dfe7e4e594a"
+  },
+  "name": "Unisex Kids Spider-Man Perforations Lightweight Sneakers",
+  "price": 999,
+  "category": "Kids",
+  "footwearType": "Sneakers",
+  "brandId": {
+    "$oid": "69b553f6e547a96a0c143536"
+  },
+  "brandName": "NIKE",
+  "description": "A pair of round toe pink sneakers ,has regular styling,\nVelcro detail\nSynthetic upper\nCushioned footbed\nTextured and patterned outsole",
+  "sizes": [
+    "3",
+    "4",
+    "5"
+  ],
+  "image": "/uploads/image-1774092731899.jpg",
+  "stock": 15,
+  "rating": 0,
+  "createdAt": {
+    "$date": "2026-03-21T11:33:33.057Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-21T11:33:33.057Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69be82ba45298dfe7e4e594e"
+  },
+  "name": "Kids Girls Shoes",
+  "price": 899,
+  "category": "Kids",
+  "footwearType": "Sneakers",
+  "brandId": {
+    "$oid": "69b553f6e547a96a0c143536"
+  },
+  "brandName": "NIKE",
+  "description": "Closure : typeLace-Up\nHeel type: No Heel\nWater resistance level :Water Resistant\nSole material :Rubber\nStyle: Sneaker\nOuter material: Mesh",
+  "sizes": [
+    "2",
+    "3",
+    "4"
+  ],
+  "image": "/uploads/image-1774092877047.jpg",
+  "stock": 24,
+  "rating": 0,
+  "createdAt": {
+    "$date": "2026-03-21T11:36:26.615Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-21T11:36:26.615Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69be848f45298dfe7e4e5952"
+  },
+  "name": "Unisex Kids Running Shoes",
+  "price": 499,
+  "category": "Kids",
+  "footwearType": "Sneakers",
+  "brandId": {
+    "$oid": "69b553f6e547a96a0c143536"
+  },
+  "brandName": "NIKE",
+  "description": "A pair of pink shoes, has regular Styling, lace-ups detail\nUpper\nCushioned footbed\nTextured and patterned outsole",
+  "sizes": [
+    "3",
+    "4",
+    "5"
+  ],
+  "image": "/uploads/image-1774093369074.jpg",
+  "stock": 12,
+  "rating": 0,
+  "createdAt": {
+    "$date": "2026-03-21T11:44:15.764Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-21T11:44:15.764Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69be924a45298dfe7e4e5960"
+  },
+  "name": "Kids   School   Shoes   -   WV521   White",
+  "price": 250,
+  "category": "Kids",
+  "footwearType": "Shoes",
+  "brandId": {
+    "$oid": "69b553f6e547a96a0c143536"
+  },
+  "brandName": "NIKE",
+  "description": "The Walkaroo Boys White School Shoe is a versatile and comfortable footwear option designed for active young boys. These shoes are crafted with a focus on both style and functionality, making them ideal for everyday wear. The lightweight design ensures comfort and ease of movement throughout the day, whether your child is running around the playground or sitting in the classroom. Care Instruction: No polish or shiner is needed just use a clean cloth to remove the dust. Note: Kindly purchase footwear size 1/2 cm more than your kid's foot size.",
+  "sizes": [
+    "3",
+    "4",
+    "5",
+    "6"
+  ],
+  "image": "/uploads/image-1774096835993.jpg",
+  "stock": 15,
+  "rating": 0,
+  "createdAt": {
+    "$date": "2026-03-21T12:42:50.416Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-21T12:42:50.416Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69be933645298dfe7e4e5964"
+  },
+  "name": "Boys Red Shoes",
+  "price": 399,
+  "category": "Kids",
+  "footwearType": "Shoes",
+  "brandId": {
+    "$oid": "69b553f6e547a96a0c143536"
+  },
+  "brandName": "NIKE",
+  "description": "Package Content : 2N HARDSOLE SHOE\nBrand : Miniklub\nCountry of Origin : India\nProduct dimension (WxLxH) (Cm) : 12 x 5 x 8\nProduct Weight (gm) : 130\nMaterial Details:\nPU TPR\n",
+  "sizes": [
+    "3",
+    "4",
+    "5",
+    "6"
+  ],
+  "image": "/uploads/image-1774097087459.jpg",
+  "stock": 18,
+  "rating": 0,
+  "createdAt": {
+    "$date": "2026-03-21T12:46:46.607Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-21T12:46:46.607Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69be93bb45298dfe7e4e5968"
+  },
+  "name": "Spring Summer New Kids Shoes Boy Girl Dress Shoes Breathable Brown Casual Children's Boys Girls Flat Leather Shoes Moccasins",
+  "price": 899,
+  "category": "Kids",
+  "footwearType": "Formal Shoes",
+  "brandId": {
+    "$oid": "69b553f6e547a96a0c143536"
+  },
+  "brandName": "NIKE",
+  "description": "Here Is All You Need - Affordable Products With Premium Material And Superior Craftsmanship For The Spring Summer New Kids Shoes Boy Girl Dress Shoes Breathable Brown Casual Children's Boys Girls Flat Leather Shoes Moccasins.\n\nProduct description:\n\nDear friends:\n\nBecause all children shoes size is difference,When you order the children's shoes,You should choose the right size according to the length of your child's feet.\n\nAccording to the Insole length.(Insole length=Foot length +1cm)\n\nThe US size is Not Standard ,Just convenient for you to do order.\n\nThe comfortable length is the foot length add about 1cm.\n\nThe measurement is not absolutely accurate,maybe there is a error 5MM.\n\n",
+  "sizes": [
+    "3",
+    "4",
+    "5",
+    "6"
+  ],
+  "image": "/uploads/image-1774097265420.jpg",
+  "stock": 9,
+  "rating": 0,
+  "createdAt": {
+    "$date": "2026-03-21T12:48:59.990Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-21T12:48:59.990Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69be945345298dfe7e4e596c"
+  },
+  "name": "PatPat Girls Boys Sneaker Shoes Lace Up Canvas Fashion Back to School Walking Tennis Running Shoes (Toddler to Kid) ",
+  "price": 1199,
+  "category": "Kids",
+  "footwearType": "Sneakers",
+  "brandId": {
+    "$oid": "69b553f6e547a96a0c143536"
+  },
+  "brandName": "NIKE",
+  "description": "levate your child’s style and comfort with PatPat’s Canvas Sneakers, the perfect Toddler Shoes, Kids Shoes, and Boys Shoes for every occasion. Designed for growing feet, these lightweight slip-on classics are ideal Toddler Girl Shoes, Toddler Boy Shoes, and even Baby Walking Shoes. The 100% premium cotton canvas upper delivers a timeless look, while the cushioned soles provide all-day support whether they’re running, walking, or heading back to school. From Girls Sneakers to Boys Tennis Shoes, Girls Tennis Shoes, and Sneakers For Boys, our versatile sneakers are also great as School Shoes For Girls, School Shoes For Boys, and Kids Tennis Shoes. They’re a smart choice for Toddler Shoes Boys, Toddler Tennis Shoes, Baby Boy Shoes, and Ten Little Shoes. Whether your little one needs Girls School Shoes, Tennis Shoes For Girls, Tennis Shoes For Boys, or White Tennis Shoes, these sneakers fit the bill perfectly. Perfect for active play, these shoes work great as Running Shoes, Boys Running Shoes, Girls Running Shoes, and Kids Running Shoes. The easy slip-on style makes them ideal Boys Slip On Shoes, Boys Slip On Sneakers, Toddler Boy Sneakers, and Big Kids Sneakers. They also make excellent Black Sneakers For Girls, Black Sneakers For Boys, Black Shoes For Girls, and Black Shoes For Boys options, along with stylish Girls White Sneakers and White Sneakers Girls styles. These sneakers aren’t just for everyday wear—they’re also perfect Zapatos Para Ninos, Tenis Para Ninas, and Zapatos Escolares Para Ninas, great for holidays like Halloween, Thanksgiving, and Christmas. Use them as School Shoes, Black School Shoes For Girls, or even casual weekend styles. Whether your child is ready to Run at the park, needs Toddler Girl Tennis Shoes, Toddler Tennis Shoes Girl, or wants something fresh for back-to-school season, PatPat’s Canvas Sneakers are the essential pair they can’t miss. Slip on with ease, walk with comfort, and play with style—PatPat’s Canvas Sneakers are here for every step of your child’s adventure.",
+  "sizes": [
+    "3",
+    "4",
+    "5",
+    "6"
+  ],
+  "image": "/uploads/image-1774097405731.jpg",
+  "stock": 9,
+  "rating": 0,
+  "createdAt": {
+    "$date": "2026-03-21T12:51:31.966Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-21T12:51:31.966Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69be95be45298dfe7e4e5970"
+  },
+  "name": "Supreme Slider Slippers.",
+  "price": 350,
+  "category": "Kids",
+  "footwearType": "Sliders",
+  "brandId": {
+    "$oid": "69b553f6e547a96a0c143536"
+  },
+  "brandName": "NIKE",
+  "description": "Comfortable for foot",
+  "sizes": [
+    "3",
+    "4",
+    "5"
+  ],
+  "image": "/uploads/image-1774097708852.jpg",
+  "stock": 13,
+  "rating": 0,
+  "createdAt": {
+    "$date": "2026-03-21T12:57:34.537Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-21T12:57:34.537Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69be969c45298dfe7e4e5974"
+  },
+  "name": "Liberty Lucy & Luke CONNER-2E Casual Printed Slides Slipper For Kids With EVA Sole | Comfortable PU Outsole | Cushioned Footbed | Lightweight Latest and Trendy Design | Stylish Footwear",
+  "price": 449,
+  "category": "Kids",
+  "footwearType": "Sliders",
+  "brandId": {
+    "$oid": "69b553f6e547a96a0c143536"
+  },
+  "brandName": "NIKE",
+  "description": "ULTIMATE COMFORT FOR DAILY WEAR: Embrace luxury with Liberty's Kids Slides Slippers, designed for unmatched all-day comfort. Perfectly cushioned to cradle your feet, they're the ideal choice for those seeking support and softness whether lounging at home, ensuring every step feels like walking on clouds.",
+  "sizes": [
+    "3",
+    "4",
+    "5",
+    "6"
+  ],
+  "image": "/uploads/image-1774098029195.jpg",
+  "stock": 12,
+  "rating": 0,
+  "createdAt": {
+    "$date": "2026-03-21T13:01:16.308Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-21T13:01:16.308Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69be99ef45298dfe7e4e59b7"
+  },
+  "name": "Power Kids Casual Shoes",
+  "price": 399,
+  "category": "Kids",
+  "footwearType": "Boots",
+  "brandId": {
+    "$oid": "69be972145298dfe7e4e5992"
+  },
+  "brandName": "AJ",
+  "description": "These Power Casual Shoes for kids offer the perfect combination of style and comfort for active little feet\nCrafted with high-quality materials, they provide a durable and flexible design that supports all-day wear\nThe trendy look features a modern design that’s easy to pair with casual outfits, making them ideal for school, playdates, or weekend outings\nWith a cushioned insole and lightweight build, these shoes ensure maximum comfort, while the slip-resistant sole offers stability for your child’s active lifestyle",
+  "sizes": [
+    "3",
+    "4",
+    "5"
+  ],
+  "image": "/uploads/image-1774098859845.jpg",
+  "stock": 15,
+  "rating": 5,
+  "createdAt": {
+    "$date": "2026-03-21T13:15:27.166Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-23T09:13:32.534Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69be9a9945298dfe7e4e59bb"
+  },
+  "name": "Boys Girls Baby Kids Shoes Sneakers Trainers Classic White Leather Style School",
+  "price": 999,
+  "category": "Kids",
+  "footwearType": "Sneakers",
+  "brandId": {
+    "$oid": "69be972145298dfe7e4e5992"
+  },
+  "brandName": "AJ",
+  "description": "Introducing these versatile sneakers for kids, perfect for any occasion. With a classic white leather style, these trainers feature a slip-on design and adjustable strap for ease and comfort. The round toe shape and flat heel style make them suitable for a range of activities, from walking and running to dancing and skateboarding.\n\n\nMade from lightweight and breathable polyurethane, these sneakers have a non-slip rubber outsole for added safety. Ideal for school, riding, typing, and hiking, they come in UK size 12 and EU size 31, making them suitable for both boys and girls. Don't miss out on these stylish and practical shoes for your kids.",
+  "sizes": [
+    "4",
+    "5"
+  ],
+  "image": "/uploads/image-1774099031489.jpg",
+  "stock": 12,
+  "rating": 0,
+  "createdAt": {
+    "$date": "2026-03-21T13:18:17.469Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-21T13:18:17.469Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69be9c7345298dfe7e4e59bf"
+  },
+  "name": "T - BLACK Casual Sneaker Shoes for Men and Women",
+  "price": 1599,
+  "category": "Men",
+  "footwearType": "Sneakers",
+  "brandId": {
+    "$oid": "69be972145298dfe7e4e5992"
+  },
+  "brandName": "AJ",
+  "description": "Sole: Airmax || Closure: Lace-Up || Shoe Width: Medium\nIdeally designed for Everyday Comfort, These Sports Shoes for Men are featured with Enhanced Comfort level which makes it perfect for Walking, Running and Daily Wear. It provides Dynamic Feet support and Arch Support to your feet.\nIt is made using High-Quality Airmax Outsole featuring Slip-Resistance which negates the accidental falls or slip-ups.\nDesigned for providing Maximum On-Ground Stability and Better Traction on different surfaces by providing the Enhance Grip",
+  "sizes": [
+    "7",
+    "8",
+    "9",
+    "10"
+  ],
+  "image": "/uploads/image-1774099481487.jpg",
+  "stock": 12,
+  "rating": 4,
+  "createdAt": {
+    "$date": "2026-03-21T13:26:11.369Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-23T09:11:02.451Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69bea29645298dfe7e4e59c7"
+  },
+  "name": "PANEL Light Grey Men's Walking Shoes",
+  "price": 1099,
+  "category": "Men",
+  "footwearType": "Shoes",
+  "brandId": {
+    "$oid": "69be972145298dfe7e4e5992"
+  },
+  "brandName": "AJ",
+  "description": "Stride like the stunner you are in Campus' Panel Casual Shoes for Men! To offer you with utmost comfort, the upper of these men's shoes is made of knitted vamp that engulfs your feet in a snug fit. The Memory Massage Tech insole makes for a cushioned footbed for you to walk on. And finally, the Air Capsule Pro midsole not only looks super cool but also offers great responsive cushioning with every step you take.",
+  "sizes": [
+    "7",
+    "8",
+    "9",
+    "10",
+    "11"
+  ],
+  "image": "/uploads/image-1774101050134.jpg",
+  "stock": 12,
+  "rating": 5,
+  "createdAt": {
+    "$date": "2026-03-21T13:52:22.652Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-23T09:09:39.138Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69bea38245298dfe7e4e59cb"
+  },
+  "name": "Unisex Sneakers | Brown Casual Shoes for Men and Women | Comfortable & Stylish Everyday Footwear |",
+  "price": 1599,
+  "category": "Men",
+  "footwearType": "Shoes",
+  "brandId": {
+    "$oid": "69be972145298dfe7e4e5992"
+  },
+  "brandName": "AJ",
+  "description": "Premium build with Synthetic Suede + Synthetic\nDurable honeycomb TPR sole for all-day grip\nMemory foam insole for enhanced comfort\nMesh fabric lining for breathability\nLace-Up closure for a secure fit",
+  "sizes": [
+    "7",
+    "8",
+    "9",
+    "10"
+  ],
+  "image": "/uploads/image-1774101215101.jpg",
+  "stock": 11,
+  "rating": 4,
+  "createdAt": {
+    "$date": "2026-03-21T13:56:18.261Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-23T09:09:08.078Z"
+  },
+  "__v": 0
+}]

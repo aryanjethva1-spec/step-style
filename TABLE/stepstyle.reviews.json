@@ -1,0 +1,170 @@
+[{
+  "_id": {
+    "$oid": "69b84e88850fc4fd888a7f9f"
+  },
+  "name": "Utsav",
+  "email": "lavginoya11@gmail.com",
+  "productId": {
+    "$oid": "69b473d416496cd4206c90f9"
+  },
+  "rating": 4,
+  "comment": "it has very good quality\n",
+  "createdAt": {
+    "$date": "2026-03-16T18:40:08.309Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-16T18:40:08.309Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69b84fb52340cbce59af8f12"
+  },
+  "name": "lav",
+  "email": "lavginoya11@gmail.com",
+  "productId": {
+    "$oid": "69b473d416496cd4206c90f9"
+  },
+  "rating": 5,
+  "comment": "it is very good size and it look too classy\n",
+  "createdAt": {
+    "$date": "2026-03-16T18:45:09.541Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-16T18:45:09.541Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69c103343886d53de0ddcae6"
+  },
+  "userId": {
+    "$oid": "69b534ec2df8766a91d05555"
+  },
+  "name": "ARUU",
+  "email": "aryanjethva1@gmail.com",
+  "productId": {
+    "$oid": "69bea38245298dfe7e4e59cb"
+  },
+  "rating": 4,
+  "comment": "Looks so Crazy",
+  "createdAt": {
+    "$date": "2026-03-23T09:09:08.060Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-23T09:09:08.060Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69c103533886d53de0ddcaf7"
+  },
+  "userId": {
+    "$oid": "69b534ec2df8766a91d05555"
+  },
+  "name": "ARUU",
+  "email": "aryanjethva1@gmail.com",
+  "productId": {
+    "$oid": "69bea29645298dfe7e4e59c7"
+  },
+  "rating": 5,
+  "comment": "Comfortable For Walking",
+  "createdAt": {
+    "$date": "2026-03-23T09:09:39.133Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-23T09:09:39.133Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69c103a63886d53de0ddcb08"
+  },
+  "userId": {
+    "$oid": "69b534ec2df8766a91d05555"
+  },
+  "name": "ARUU",
+  "email": "aryanjethva1@gmail.com",
+  "productId": {
+    "$oid": "69be9c7345298dfe7e4e59bf"
+  },
+  "rating": 4,
+  "comment": "It's superb ",
+  "createdAt": {
+    "$date": "2026-03-23T09:11:02.446Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-23T09:11:02.446Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69c103bf3886d53de0ddcb19"
+  },
+  "userId": {
+    "$oid": "69b534ec2df8766a91d05555"
+  },
+  "name": "ARUU",
+  "email": "aryanjethva1@gmail.com",
+  "productId": {
+    "$oid": "69be758f45298dfe7e4e58e4"
+  },
+  "rating": 3,
+  "comment": "Need some improvement ",
+  "createdAt": {
+    "$date": "2026-03-23T09:11:27.047Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-23T09:11:27.047Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69c1040b3886d53de0ddcb3b"
+  },
+  "userId": {
+    "$oid": "69b534ec2df8766a91d05555"
+  },
+  "name": "ARUU",
+  "email": "aryanjethva1@gmail.com",
+  "productId": {
+    "$oid": "69be752c45298dfe7e4e58da"
+  },
+  "rating": 5,
+  "comment": "It looks too good when we attend any function.\n",
+  "createdAt": {
+    "$date": "2026-03-23T09:12:43.245Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-23T09:12:43.245Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69c1043c3886d53de0ddcb56"
+  },
+  "userId": {
+    "$oid": "69b534ec2df8766a91d05555"
+  },
+  "name": "ARUU",
+  "email": "aryanjethva1@gmail.com",
+  "productId": {
+    "$oid": "69be99ef45298dfe7e4e59b7"
+  },
+  "rating": 5,
+  "comment": "That's looks classy.",
+  "createdAt": {
+    "$date": "2026-03-23T09:13:32.525Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-23T09:13:32.525Z"
+  },
+  "__v": 0
+}]

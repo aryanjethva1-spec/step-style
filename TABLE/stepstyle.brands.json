@@ -1,0 +1,99 @@
+[{
+  "_id": {
+    "$oid": "69b45a89dd3d8bb81dcc44c4"
+  },
+  "brandName": "StepStyle Official",
+  "email": "official@stepstyle.com",
+  "password": "$2b$10$NR1b.s1vc3QoIyuTXsdmJ.4dw9MNJgodVNe/I28M.0PF1/hV6vvii",
+  "logo": "https://cdn-icons-png.flaticon.com/512/2872/2872620.png",
+  "description": "The official footwear partner of StepStyle.",
+  "status": "approved",
+  "createdAt": {
+    "$date": "2026-03-13T18:42:17.430Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-13T18:42:17.430Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69b553f6e547a96a0c143536"
+  },
+  "brandName": "NIKE",
+  "email": "laxdiyora1221@gmail.com",
+  "password": "$2b$10$9xrdXOl8OSMvUCN5QYvOE.mFQAVqlgpQDNvmjLhfcxONdV/J7oBNe",
+  "logo": "/uploads/image-1773491158495.jpg",
+  "description": "We provide stylish, comfortable, and durable footwear that blends fashion with everyday functionality, ensuring confidence in every step.",
+  "status": "approved",
+  "ownerName": "Diyora",
+  "username": "NIKE",
+  "address": "85 ,SIDHESHVAR SOCIETY, PUNAGAM, SURAT CITY,SURAT,GUJARAT",
+  "city": "SURAT",
+  "state": "GUJARAT",
+  "pincode": "395010",
+  "country": "India",
+  "contact": "6354835231",
+  "gstNo": "1425365874985",
+  "createdAt": {
+    "$date": "2026-03-14T12:26:30.761Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-28T07:35:36.735Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69b7001b4f771dc5bff26e95"
+  },
+  "brandName": "AR",
+  "email": "aryanjethva1@gmail.com",
+  "password": "$2b$10$EZDFRSrIHkiPyBsWnyytH.t.asTpyqgZE3o0rjuIVMTQ4AWpd.vXO",
+  "logo": "/uploads/image-1773600772625.jpg",
+  "description": "WE SELL TRUST",
+  "status": "approved",
+  "ownerName": "JETHWA",
+  "username": "AR",
+  "address": "85 ,SIDHESHVAR SOCIETY, PUNAGAM, SURAT CITY,SURAT,GUJARAT",
+  "city": "SURAT",
+  "state": "GUJARAT",
+  "pincode": "395010",
+  "country": "India",
+  "contact": "09714137221",
+  "gstNo": "",
+  "createdAt": {
+    "$date": "2026-03-15T18:53:15.116Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-15T18:54:49.546Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69be972145298dfe7e4e5992"
+  },
+  "brandName": "AJ",
+  "email": "aryanjethva91@gmail.com",
+  "password": "$2b$10$3VcQL3Pw1fHOscampJujn.4sqE0EahHUlG/Q9o/kVcCXYWDzOnGKm",
+  "logo": "/uploads/image-1773901862221.jpg",
+  "description": "Always be happy",
+  "status": "approved",
+  "ownerName": "Aryan Jethva",
+  "username": "arrr_",
+  "address": "62 punagam surat",
+  "city": "surat",
+  "state": "gujarat",
+  "pincode": "395010",
+  "country": "india",
+  "contact": "9909359609",
+  "gstNo": "",
+  "createdAt": {
+    "$date": "2026-03-21T13:03:29.084Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-21T13:12:11.239Z"
+  },
+  "__v": 0
+}]
