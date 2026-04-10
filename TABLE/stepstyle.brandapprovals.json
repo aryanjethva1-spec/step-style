@@ -24,4 +24,31 @@
     "$date": "2026-03-27T05:48:10.359Z"
   },
   "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69c8bbbbea349001fa9111d9"
+  },
+  "brandName": "Air",
+  "email": "jethvaaryan415@gmail.com",
+  "password": "$2b$10$1UBnztZt3q3/MKLQiF3fXOirBpmO9AxsUQps98D8XBGLz.eMXupNW",
+  "logo": "/uploads/image-1774762899736.jpg",
+  "description": "Luxury items only.",
+  "status": "pending",
+  "ownerName": "aryan",
+  "username": "shah",
+  "address": "varachha",
+  "city": "surat",
+  "state": "gujarat",
+  "pincode": "395010",
+  "country": "india",
+  "contact": "9909359609",
+  "gstNo": "969867458912",
+  "createdAt": {
+    "$date": "2026-03-29T05:42:19.937Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-29T05:42:19.937Z"
+  },
+  "__v": 0
 }]

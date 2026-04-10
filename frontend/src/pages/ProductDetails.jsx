@@ -213,7 +213,7 @@ const ProductDetails = () => {
                                                 onChange={(e) => setQty(Number(e.target.value))}
                                                 className="rounded-pill shadow-sm"
                                             >
-                                                {[...Array(Math.min(product.stock, 5)).keys()].map((x) => (
+                                                {[...Array(Math.min(product.stock || 0, 5)).keys()].map((x) => (
                                                     <option key={x + 1} value={x + 1}>{x + 1}</option>
                                                 ))}
                                             </Form.Select>

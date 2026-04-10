@@ -49,7 +49,7 @@
   },
   "brandName": "AR",
   "email": "aryanjethva1@gmail.com",
-  "password": "$2b$10$EZDFRSrIHkiPyBsWnyytH.t.asTpyqgZE3o0rjuIVMTQ4AWpd.vXO",
+  "password": "$2b$10$VoEgG8v7F87I67U.qXC2fe3YqD7xFNDDRfHoC9nVXKa2r4agJ7aTS",
   "logo": "/uploads/image-1773600772625.jpg",
   "description": "WE SELL TRUST",
   "status": "approved",
@@ -66,7 +66,7 @@
     "$date": "2026-03-15T18:53:15.116Z"
   },
   "updatedAt": {
-    "$date": "2026-03-15T18:54:49.546Z"
+    "$date": "2026-03-29T05:43:58.432Z"
   },
   "__v": 0
 },
@@ -76,7 +76,7 @@
   },
   "brandName": "AJ",
   "email": "aryanjethva91@gmail.com",
-  "password": "$2b$10$3VcQL3Pw1fHOscampJujn.4sqE0EahHUlG/Q9o/kVcCXYWDzOnGKm",
+  "password": "$2b$10$PcB/FI5/uN.qgk2Z97bGzOEBs6W4qvU/bC4jUVx8ph.Wi7cLyTCbe",
   "logo": "/uploads/image-1773901862221.jpg",
   "description": "Always be happy",
   "status": "approved",
@@ -93,7 +93,7 @@
     "$date": "2026-03-21T13:03:29.084Z"
   },
   "updatedAt": {
-    "$date": "2026-03-21T13:12:11.239Z"
+    "$date": "2026-03-29T05:51:28.543Z"
   },
   "__v": 0
 }]

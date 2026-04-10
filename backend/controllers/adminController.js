@@ -174,7 +174,8 @@ export const getDashboardStats = async (req, res) => {
          const totalOrders = await Order.countDocuments();
          const totalApprovalRequests = await BrandApproval.countDocuments({ status: 'pending' });
          
-         const totalRevenue = totalOrders * 100;
+         const approvedOrdersCount = await Order.countDocuments({ approvedByBrand: true });
+         const totalRevenue = approvedOrdersCount * 100;
 
          res.json({
              totalUsers,

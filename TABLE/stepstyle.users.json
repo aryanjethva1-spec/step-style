@@ -4,7 +4,7 @@
   },
   "name": "lax",
   "email": "laxdiyora1221@gmail.com",
-  "password": "$2b$10$hhzNGfDgouF4V.JxXR4JBedEHRe7/KVEDM5AAbFXrZpJqisdR594K",
+  "password": "$2b$10$9Oao6ZN4aAdMRn0saxvBgeO.Q0StuhYfZlUB67gSSaukIherxqa6u",
   "role": "user",
   "address": "41 , siddhipark society",
   "contact": "9714137221",
@@ -14,10 +14,10 @@
     "$date": "2026-03-13T20:04:44.088Z"
   },
   "updatedAt": {
-    "$date": "2026-03-28T05:47:12.375Z"
+    "$date": "2026-03-30T03:37:44.945Z"
   },
   "__v": 0,
-  "addressLine1": "40, siddhipark soc., near janta aprtment, L.H. Road.",
+  "addressLine1": "85 ,SIDHESHVAR SOCIETY, PUNAGAM, SURAT CITY,SURAT,GUJARAT",
   "addressType": "Home",
   "country": "India",
   "state": "GUJARAT",
@@ -51,7 +51,7 @@
   },
   "name": "ARUU",
   "email": "aryanjethva1@gmail.com",
-  "password": "$2b$10$oCApI5CrZAlYu9o293CX3.F0CFOZVJnkor4hP5MfOl3X1vwr1vKWW",
+  "password": "$2b$10$cQqXDDxpv1uroG8Ebf6KZebdpe/3Wgi/fHdJJpMOAT0LpBdjk66fS",
   "role": "user",
   "addressLine1": "85 ,SIDHESHVAR SOCIETY, PUNAGAM, SURAT CITY,SURAT,GUJARAT",
   "addressLine2": "NEAR SITANAGAR CHOWK",
@@ -66,7 +66,7 @@
     "$date": "2026-03-14T10:14:04.355Z"
   },
   "updatedAt": {
-    "$date": "2026-03-18T06:55:41.062Z"
+    "$date": "2026-03-28T08:03:19.594Z"
   },
   "__v": 0,
   "gender": "Male"
@@ -94,6 +94,58 @@
   },
   "updatedAt": {
     "$date": "2026-03-16T04:29:31.021Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69c8a867ea349001fa911104"
+  },
+  "name": "aryan ",
+  "email": "jethvaaryan415@gmail.com",
+  "password": "$2b$10$1MxmB1RmvyTe.V/JmNNB6.APFPDIj.oBcR2AdLfE6cedwAQxYz4Em",
+  "role": "user",
+  "addressLine1": "punagam",
+  "addressLine2": "",
+  "city": "surat",
+  "state": "gujarat",
+  "pincode": "395262",
+  "country": "india",
+  "addressType": "Home",
+  "landmark": "",
+  "contact": "9909359609",
+  "gender": "Male",
+  "createdAt": {
+    "$date": "2026-03-29T04:19:51.565Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-29T04:19:51.565Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69c9e9d846ee82b7054b3ca4"
+  },
+  "name": "utsav",
+  "email": "utsavmeghani22@gmail.com",
+  "password": "$2b$10$IR8MFbt/KpFeejTwueNvy.plxqyKBPi0XwEPR15H13VMoPCRAdkpW",
+  "role": "user",
+  "addressLine1": "85 ,SIDHESHVAR SOCIETY, PUNAGAM, SURAT CITY,SURAT,GUJARAT",
+  "addressLine2": "",
+  "city": "SURAT",
+  "state": "GUJARAT",
+  "pincode": "395010",
+  "country": "India",
+  "addressType": "Home",
+  "landmark": "",
+  "contact": "09714137221",
+  "gender": "Male",
+  "createdAt": {
+    "$date": "2026-03-30T03:11:20.724Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-30T03:11:20.724Z"
   },
   "__v": 0
 }]

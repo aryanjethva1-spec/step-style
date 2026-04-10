@@ -13,7 +13,7 @@ const Home = () => {
     const categories = [
         { name: 'Men Shoes', q: 'Men', img: 'https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa' },
         { name: 'Women Shoes', q: 'Women', img: 'https://images.unsplash.com/photo-1543163521-1bf539c55dd2' },
-        { name: 'Sports Shoes', q: 'Sports', img: 'https://images.unsplash.com/photo-1551107699-5f0dc8714e83' },
+        { name: 'Sports Shoes', q: 'Sports', img: 'https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto/035ca1d9-34a2-492f-94eb-124165f857fa/BOOK+1+AURORA.png' },
         { name: 'Casual Shoes', q: 'Casual', img: 'https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77' },
         { name: 'Kids Shoes', q: 'Boys', img: 'https://images.unsplash.com/photo-1514989940723-e8e51635b782' }
     ];

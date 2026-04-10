@@ -370,14 +370,14 @@
   "address": "85 ,SIDHESHVAR SOCIETY, PUNAGAM, SURAT CITY,SURAT,GUJARAT, SURAT, GUJARAT, 395010, India",
   "paymentMethod": "UPI",
   "paymentStatus": "Completed",
-  "orderStatus": "Pending",
-  "approvedByBrand": false,
+  "orderStatus": "Approved",
+  "approvedByBrand": true,
   "__v": 0,
   "createdAt": {
     "$date": "2026-03-16T05:03:28.291Z"
   },
   "updatedAt": {
-    "$date": "2026-03-16T05:03:28.291Z"
+    "$date": "2026-03-30T03:07:43.764Z"
   }
 },
 {
@@ -469,14 +469,14 @@
   "address": "85 ,SIDHESHVAR SOCIETY, PUNAGAM, SURAT CITY,SURAT,GUJARAT, SURAT, GUJARAT, 395010, India",
   "paymentMethod": "UPI",
   "paymentStatus": "Completed",
-  "orderStatus": "Pending",
+  "orderStatus": "Cancelled",
   "approvedByBrand": false,
   "__v": 0,
   "createdAt": {
     "$date": "2026-03-16T05:06:16.664Z"
   },
   "updatedAt": {
-    "$date": "2026-03-16T05:06:16.664Z"
+    "$date": "2026-03-30T03:07:48.277Z"
   }
 },
 {
@@ -576,5 +576,104 @@
   },
   "updatedAt": {
     "$date": "2026-03-18T06:58:06.355Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69c78bd687a9f96ba20ec41a"
+  },
+  "userId": {
+    "$oid": "69b534ec2df8766a91d05555"
+  },
+  "userType": "user",
+  "productId": {
+    "$oid": "69be945345298dfe7e4e596c"
+  },
+  "brandId": {
+    "$oid": "69b553f6e547a96a0c143536"
+  },
+  "brandName": "NIKE",
+  "productName": "PatPat Girls Boys Sneaker Shoes Lace Up Canvas Fashion Back to School Walking Tennis Running Shoes (Toddler to Kid) ",
+  "selectedSize": "6",
+  "quantity": 1,
+  "totalPrice": 863.28,
+  "discountAmount": 335.72,
+  "address": "punagam, surat, gujarat, 390502, India",
+  "paymentMethod": "UPI",
+  "paymentStatus": "Completed",
+  "orderStatus": "Pending",
+  "approvedByBrand": false,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-03-28T08:05:42.010Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-28T08:05:42.010Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69c8adc8ea349001fa911140"
+  },
+  "userId": {
+    "$oid": "69c8a867ea349001fa911104"
+  },
+  "userType": "user",
+  "productId": {
+    "$oid": "69bea29645298dfe7e4e59c7"
+  },
+  "brandId": {
+    "$oid": "69be972145298dfe7e4e5992"
+  },
+  "brandName": "AJ",
+  "productName": "PANEL Light Grey Men's Walking Shoes",
+  "selectedSize": "9",
+  "quantity": 1,
+  "totalPrice": 780.29,
+  "discountAmount": 318.71,
+  "address": "punagam, surat, gujarat, 395526, India",
+  "paymentMethod": "UPI",
+  "paymentStatus": "Completed",
+  "orderStatus": "Delivered",
+  "approvedByBrand": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-03-29T04:42:48.002Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-29T05:52:19.554Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69c9efe446ee82b7054b3ef6"
+  },
+  "userId": {
+    "$oid": "69b46ddc6775a1fab3dba6d4"
+  },
+  "userType": "user",
+  "productId": {
+    "$oid": "69c90f529867631d85fa83ad"
+  },
+  "brandId": {
+    "$oid": "69be972145298dfe7e4e5992"
+  },
+  "brandName": "AJ",
+  "productName": "Men's   Lace-up   Sports   Shoes",
+  "selectedSize": "9",
+  "quantity": 1,
+  "totalPrice": 567.29,
+  "discountAmount": 231.71,
+  "address": "85 ,SIDHESHVAR SOCIETY, PUNAGAM, SURAT CITY,SURAT,GUJARAT, SURAT, GUJARAT, lax123, India",
+  "paymentMethod": "Card",
+  "paymentStatus": "Completed",
+  "orderStatus": "Pending",
+  "approvedByBrand": false,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-03-30T03:37:08.729Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-30T03:37:08.729Z"
   }
 }]

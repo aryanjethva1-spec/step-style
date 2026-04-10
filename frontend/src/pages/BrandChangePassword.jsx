@@ -219,7 +219,7 @@ const BrandChangePassword = () => {
                 </Row>
             </div>
 
-            <style jsx="true">{`
+            <style>{`
                 .fw-black { font-weight: 900; }
                 .letter-spacing-1 { letter-spacing: 1px; }
                 .letter-spacing-2 { letter-spacing: 2px; }

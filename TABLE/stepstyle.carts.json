@@ -12,9 +12,9 @@
     "$date": "2026-03-14T10:36:01.472Z"
   },
   "updatedAt": {
-    "$date": "2026-03-15T15:14:55.217Z"
+    "$date": "2026-03-28T08:05:42.019Z"
   },
-  "__v": 7,
+  "__v": 8,
   "userType": "user"
 },
 {
@@ -77,16 +77,31 @@
     "$oid": "69b46ddc6775a1fab3dba6d4"
   },
   "userType": "user",
-  "products": [],
-  "totalPrice": 0,
-  "quantity": 0,
+  "products": [
+    {
+      "productId": {
+        "$oid": "69c90f529867631d85fa83ad"
+      },
+      "quantity": 1,
+      "selectedSize": "9",
+      "price": 799,
+      "brandId": {
+        "$oid": "69be972145298dfe7e4e5992"
+      },
+      "_id": {
+        "$oid": "69c9f01646ee82b7054b3f1f"
+      }
+    }
+  ],
+  "totalPrice": 799,
+  "quantity": 1,
   "createdAt": {
     "$date": "2026-03-15T06:37:18.750Z"
   },
   "updatedAt": {
-    "$date": "2026-03-18T06:53:21.488Z"
+    "$date": "2026-03-30T03:37:58.837Z"
   },
-  "__v": 5
+  "__v": 9
 },
 {
   "_id": {
@@ -106,4 +121,23 @@
     "$date": "2026-03-16T05:08:03.783Z"
   },
   "__v": 5
+},
+{
+  "_id": {
+    "$oid": "69c8ac60ea349001fa911137"
+  },
+  "userId": {
+    "$oid": "69c8a867ea349001fa911104"
+  },
+  "userType": "user",
+  "products": [],
+  "totalPrice": 0,
+  "quantity": 0,
+  "createdAt": {
+    "$date": "2026-03-29T04:36:48.810Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-29T04:42:48.011Z"
+  },
+  "__v": 0
 }]

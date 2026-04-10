@@ -104,7 +104,7 @@ const ProductCard = ({ product }) => {
                     <h5 className="text-danger fw-black mb-0">₹{product.price.toLocaleString(undefined, { minimumFractionDigits: 2 })}</h5>
                 </div>
             </Card.Body>
-            <style jsx="true">{`
+            <style>{`
                 .scale-110 { transform: scale(1.1); }
                 .bottom-n100 { bottom: -50px; }
                 .opacity-0 { opacity: 0; }
