@@ -72,7 +72,7 @@ const Login = () => {
                                 <Form.Group className="mb-5" controlId="password">
                                     <Form.Label className="d-flex justify-content-between fw-semibold small text-uppercase">
                                         Password
-                                        <a href="#" className="text-danger text-decoration-none">Forgot password?</a>
+                                        <a href="#!" className="text-danger text-decoration-none">Forgot password?</a>
                                     </Form.Label>
                                     <Form.Control
                                         type="password"

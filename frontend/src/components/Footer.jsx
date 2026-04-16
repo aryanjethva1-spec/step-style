@@ -26,18 +26,18 @@ const Footer = () => {
                         <h6 className="text-uppercase fw-bold mb-4 text-danger small" style={{ letterSpacing: '1px' }}>Support</h6>
                         <ul className="list-unstyled">
                             <li className="mb-2"><a href="/contact" className="text-decoration-none text-light opacity-75 footer-link transition-all">Contact Us</a></li>
-                            <li className="mb-2"><a href="#" className="text-decoration-none text-light opacity-75 footer-link transition-all">Shipping & Returns</a></li>
-                            <li className="mb-2"><a href="#" className="text-decoration-none text-light opacity-75 footer-link transition-all">FAQ</a></li>
-                            <li className="mb-2"><a href="#" className="text-decoration-none text-light opacity-75 footer-link transition-all">Track Order</a></li>
+                            <li className="mb-2"><a href="#!" className="text-decoration-none text-light opacity-75 footer-link transition-all">Shipping & Returns</a></li>
+                            <li className="mb-2"><a href="#!" className="text-decoration-none text-light opacity-75 footer-link transition-all">FAQ</a></li>
+                            <li className="mb-2"><a href="#!" className="text-decoration-none text-light opacity-75 footer-link transition-all">Track Order</a></li>
                         </ul>
                     </Col>
                     <Col lg={4} md={6}>
                         <h6 className="text-uppercase fw-bold mb-4 text-danger small" style={{ letterSpacing: '1px' }}>Stay Connected</h6>
                         <p className="text-light opacity-75 mb-4 small">Subscribe to our newsletter for exclusive offers, new arrivals, and style updates.</p>
                         <div className="d-flex gap-3 mb-4">
-                            <a href="#" className="text-white bg-dark border border-secondary border-opacity-50 p-2 rounded-circle hover-bg-danger transition-all d-flex shadow-sm"><FaFacebook size={18} /></a>
-                            <a href="#" className="text-white bg-dark border border-secondary border-opacity-50 p-2 rounded-circle hover-bg-danger transition-all d-flex shadow-sm"><FaTwitter size={18} /></a>
-                            <a href="#" className="text-white bg-dark border border-secondary border-opacity-50 p-2 rounded-circle hover-bg-danger transition-all d-flex shadow-sm"><FaInstagram size={18} /></a>
+                            <a href="#!" className="text-white bg-dark border border-secondary border-opacity-50 p-2 rounded-circle hover-bg-danger transition-all d-flex shadow-sm"><FaFacebook size={18} /></a>
+                            <a href="#!" className="text-white bg-dark border border-secondary border-opacity-50 p-2 rounded-circle hover-bg-danger transition-all d-flex shadow-sm"><FaTwitter size={18} /></a>
+                            <a href="#!" className="text-white bg-dark border border-secondary border-opacity-50 p-2 rounded-circle hover-bg-danger transition-all d-flex shadow-sm"><FaInstagram size={18} /></a>
                         </div>
                     </Col>
                 </Row>
@@ -45,8 +45,8 @@ const Footer = () => {
                 <div className="d-flex justify-content-between align-items-center flex-wrap pb-2">
                     <p className="mb-0 text-light opacity-50 small">&copy; {new Date().getFullYear()} StepStyle. All rights reserved.</p>
                     <div className="d-flex gap-4 small mt-2 mt-md-0">
-                        <a href="#" className="text-decoration-none text-light opacity-50 footer-link transition-all">Privacy Policy</a>
-                        <a href="#" className="text-decoration-none text-light opacity-50 footer-link transition-all">Terms of Service</a>
+                        <a href="#!" className="text-decoration-none text-light opacity-50 footer-link transition-all">Privacy Policy</a>
+                        <a href="#!" className="text-decoration-none text-light opacity-50 footer-link transition-all">Terms of Service</a>
                     </div>
                 </div>
             </Container>
