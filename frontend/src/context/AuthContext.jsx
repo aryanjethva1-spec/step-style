@@ -52,7 +52,7 @@ const AuthProvider = ({ children }) => {
             const { data } = await api.post('/auth/register', { name, email, password });
             setUser(data);
             localStorage.setItem('userInfo', JSON.stringify(data));
-             return { success: true };
+            return { success: true };
         } catch (error) {
             return { success: false, message: error.response?.data?.message || 'Registration failed' };
         }
@@ -63,7 +63,7 @@ const AuthProvider = ({ children }) => {
             const { data } = await api.post('/auth/register', userData);
             setUser(data);
             localStorage.setItem('userInfo', JSON.stringify(data));
-             return { success: true };
+            return { success: true };
         } catch (error) {
             return { success: false, message: error.response?.data?.message || 'Registration failed' };
         }
@@ -82,6 +82,17 @@ const AuthProvider = ({ children }) => {
         }
     };
 
+    const verifyOTP = async (email, otp) => {
+        try {
+            const { data } = await api.post('/otp/verify-otp', { email, otp });
+            return { success: true, message: data.message };
+        } catch (error) {
+            console.error('[AuthContext] verifyOTP Error:', error);
+            const msg = error.response?.data?.message || error.message || 'OTP verification failed';
+            return { success: false, message: msg };
+        }
+    };
+
     const logoutUser = async () => {
         try {
             await api.get('/auth/logout');
@@ -93,7 +104,7 @@ const AuthProvider = ({ children }) => {
     };
 
     const loginBrand = async (email, password) => {
-         try {
+        try {
             const { data } = await api.post('/brand/auth/login', { email, password });
             setBrand(data);
             localStorage.setItem('brandInfo', JSON.stringify(data));
@@ -103,19 +114,19 @@ const AuthProvider = ({ children }) => {
         }
     };
 
-     const registerBrand = async (brandData) => {
+    const registerBrand = async (brandData) => {
         try {
             const { data } = await api.post('/brand/auth/register', brandData);
             setBrand(data);
             localStorage.setItem('brandInfo', JSON.stringify(data));
-             return { success: true };
+            return { success: true };
         } catch (error) {
             return { success: false, message: error.response?.data?.message || 'Registration failed' };
         }
     };
 
     const logoutBrand = async () => {
-         try {
+        try {
             await api.get('/brand/auth/logout');
             setBrand(null);
             localStorage.removeItem('brandInfo');
@@ -171,9 +182,22 @@ const AuthProvider = ({ children }) => {
     };
 
     return (
-        <AuthContext.Provider value={{ 
-            user, brand, loading, loginUser, registerUser, registerWithOTP, sendOTP, logoutUser, 
-            loginBrand, registerBrand, logoutBrand, forgotPassword, sendResetOTP, resetPassword,
+        <AuthContext.Provider value={{
+            user,
+            brand,
+            loading,
+            loginUser,
+            registerUser,
+            registerWithOTP,
+            sendOTP,
+            verifyOTP,
+            logoutUser,
+            loginBrand,
+            registerBrand,
+            logoutBrand,
+            forgotPassword,
+            sendResetOTP,
+            resetPassword,
             updateProfile
         }}>
             {children}

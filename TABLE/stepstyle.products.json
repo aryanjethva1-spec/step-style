@@ -3,8 +3,8 @@
     "$oid": "69b473d416496cd4206c90f9"
   },
   "name": "Nike Air Max 270",
-  "price": 150,
-  "category": "Sports",
+  "price": 799,
+  "category": "Men",
   "brandId": {
     "$oid": "69b45a89dd3d8bb81dcc44c4"
   },
@@ -25,17 +25,17 @@
     "$date": "2026-03-13T20:30:12.822Z"
   },
   "updatedAt": {
-    "$date": "2026-03-16T18:53:45.733Z"
+    "$date": "2026-03-29T11:21:58.518Z"
   },
-  "footwearType": "Casual"
+  "footwearType": "Sports Shoes"
 },
 {
   "_id": {
     "$oid": "69b473d416496cd4206c90fa"
   },
   "name": "Adidas Ultraboost 22",
-  "price": 180,
-  "category": "Sports",
+  "price": 899,
+  "category": "Women",
   "brandId": {
     "$oid": "69b45a89dd3d8bb81dcc44c4"
   },
@@ -55,16 +55,17 @@
     "$date": "2026-03-13T20:30:12.822Z"
   },
   "updatedAt": {
-    "$date": "2026-03-13T20:30:12.822Z"
-  }
+    "$date": "2026-03-29T11:22:29.320Z"
+  },
+  "footwearType": "Boots"
 },
 {
   "_id": {
     "$oid": "69b473d416496cd4206c90fb"
   },
   "name": "Puma RS-X Bold",
-  "price": 120,
-  "category": "Casual",
+  "price": 699,
+  "category": "Men",
   "brandId": {
     "$oid": "69b45a89dd3d8bb81dcc44c4"
   },
@@ -84,16 +85,17 @@
     "$date": "2026-03-13T20:30:12.822Z"
   },
   "updatedAt": {
-    "$date": "2026-03-13T20:30:12.822Z"
-  }
+    "$date": "2026-03-29T11:22:58.418Z"
+  },
+  "footwearType": "Sneakers"
 },
 {
   "_id": {
     "$oid": "69b473d416496cd4206c90fc"
   },
   "name": "Nike Dunk Low Panda",
-  "price": 110,
-  "category": "Casual",
+  "price": 1199,
+  "category": "Men",
   "brandId": {
     "$oid": "69b45a89dd3d8bb81dcc44c4"
   },
@@ -108,23 +110,24 @@
     "11"
   ],
   "image": "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=800&q=80",
-  "stock": 100,
+  "stock": 25,
   "rating": 4.9,
   "__v": 0,
   "createdAt": {
     "$date": "2026-03-13T20:30:12.822Z"
   },
   "updatedAt": {
-    "$date": "2026-03-13T20:30:12.822Z"
-  }
+    "$date": "2026-03-29T11:23:22.348Z"
+  },
+  "footwearType": "Sports Shoes"
 },
 {
   "_id": {
     "$oid": "69b473d416496cd4206c90fd"
   },
   "name": "Jordan 1 Retro High",
-  "price": 170,
-  "category": "Casual",
+  "price": 999,
+  "category": "Men",
   "brandId": {
     "$oid": "69b45a89dd3d8bb81dcc44c4"
   },
@@ -144,16 +147,17 @@
     "$date": "2026-03-13T20:30:12.822Z"
   },
   "updatedAt": {
-    "$date": "2026-03-14T15:17:10.346Z"
-  }
+    "$date": "2026-03-29T11:23:45.021Z"
+  },
+  "footwearType": "Shoes"
 },
 {
   "_id": {
     "$oid": "69b473d416496cd4206c90fe"
   },
   "name": "Adidas Stan Smith",
-  "price": 90,
-  "category": "Casual",
+  "price": 499,
+  "category": "Men",
   "brandId": {
     "$oid": "69b45a89dd3d8bb81dcc44c4"
   },
@@ -174,16 +178,17 @@
     "$date": "2026-03-13T20:30:12.822Z"
   },
   "updatedAt": {
-    "$date": "2026-03-13T20:30:12.822Z"
-  }
+    "$date": "2026-03-29T11:24:05.933Z"
+  },
+  "footwearType": "Sneakers"
 },
 {
   "_id": {
     "$oid": "69b473d416496cd4206c90ff"
   },
   "name": "Vans Old Skool",
-  "price": 65,
-  "category": "Casual",
+  "price": 449,
+  "category": "Men",
   "brandId": {
     "$oid": "69b45a89dd3d8bb81dcc44c4"
   },
@@ -206,16 +211,17 @@
     "$date": "2026-03-13T20:30:12.822Z"
   },
   "updatedAt": {
-    "$date": "2026-03-13T20:30:12.822Z"
-  }
+    "$date": "2026-03-29T11:24:26.131Z"
+  },
+  "footwearType": "Boots"
 },
 {
   "_id": {
     "$oid": "69b473d416496cd4206c9100"
   },
   "name": "New Balance 574 Metallic",
-  "price": 95,
-  "category": "Casual",
+  "price": 799,
+  "category": "Men",
   "brandId": {
     "$oid": "69b45a89dd3d8bb81dcc44c4"
   },
@@ -228,15 +234,16 @@
     "9"
   ],
   "image": "https://images.unsplash.com/photo-1539185441755-769473a23570?auto=format&fit=crop&w=800&q=80",
-  "stock": 40,
+  "stock": 39,
   "rating": 4.4,
   "__v": 0,
   "createdAt": {
     "$date": "2026-03-13T20:30:12.822Z"
   },
   "updatedAt": {
-    "$date": "2026-03-13T20:30:12.822Z"
-  }
+    "$date": "2026-03-30T03:07:43.760Z"
+  },
+  "footwearType": "Sports Shoes"
 },
 {
   "_id": {
@@ -290,12 +297,12 @@
   ],
   "image": "/uploads/image-1773600909806.jpg",
   "stock": 26,
-  "rating": 0,
+  "rating": 5,
   "createdAt": {
     "$date": "2026-03-15T18:55:49.751Z"
   },
   "updatedAt": {
-    "$date": "2026-03-18T06:57:14.954Z"
+    "$date": "2026-03-29T11:42:40.015Z"
   },
   "__v": 0
 },
@@ -649,12 +656,12 @@
   ],
   "image": "/uploads/image-1774092731899.jpg",
   "stock": 15,
-  "rating": 0,
+  "rating": 5,
   "createdAt": {
     "$date": "2026-03-21T11:33:33.057Z"
   },
   "updatedAt": {
-    "$date": "2026-03-21T11:33:33.057Z"
+    "$date": "2026-03-29T05:34:34.228Z"
   },
   "__v": 0
 },
@@ -913,14 +920,14 @@
     "4",
     "5"
   ],
-  "image": "/uploads/image-1774098859845.jpg",
+  "image": "/uploads/image-1774839507690.jpg",
   "stock": 15,
   "rating": 5,
   "createdAt": {
     "$date": "2026-03-21T13:15:27.166Z"
   },
   "updatedAt": {
-    "$date": "2026-03-23T09:13:32.534Z"
+    "$date": "2026-03-30T02:58:30.368Z"
   },
   "__v": 0
 },
@@ -973,12 +980,12 @@
   ],
   "image": "/uploads/image-1774099481487.jpg",
   "stock": 12,
-  "rating": 4,
+  "rating": 4.5,
   "createdAt": {
     "$date": "2026-03-21T13:26:11.369Z"
   },
   "updatedAt": {
-    "$date": "2026-03-23T09:11:02.451Z"
+    "$date": "2026-03-29T11:41:33.531Z"
   },
   "__v": 0
 },
@@ -1003,13 +1010,13 @@
     "11"
   ],
   "image": "/uploads/image-1774101050134.jpg",
-  "stock": 12,
+  "stock": 11,
   "rating": 5,
   "createdAt": {
     "$date": "2026-03-21T13:52:22.652Z"
   },
   "updatedAt": {
-    "$date": "2026-03-23T09:09:39.138Z"
+    "$date": "2026-03-29T05:52:08.894Z"
   },
   "__v": 0
 },
@@ -1032,14 +1039,105 @@
     "9",
     "10"
   ],
-  "image": "/uploads/image-1774101215101.jpg",
+  "image": "/uploads/image-1774839333181.jpg",
   "stock": 11,
-  "rating": 4,
+  "rating": 4.5,
   "createdAt": {
     "$date": "2026-03-21T13:56:18.261Z"
   },
   "updatedAt": {
-    "$date": "2026-03-23T09:09:08.078Z"
+    "$date": "2026-03-30T03:14:10.991Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69c90e889867631d85fa83a5"
+  },
+  "name": "Running Shoes ",
+  "price": 899,
+  "category": "Men",
+  "footwearType": "Sports Shoes",
+  "brandId": {
+    "$oid": "69be972145298dfe7e4e5992"
+  },
+  "brandName": "AJ",
+  "description": "A pair of blue running shoes. Isolated on a white background.",
+  "sizes": [
+    "7",
+    "8",
+    "9",
+    "10",
+    "11"
+  ],
+  "image": "/uploads/image-1774784056084.jpg",
+  "stock": 15,
+  "rating": 0,
+  "createdAt": {
+    "$date": "2026-03-29T11:35:36.810Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-29T11:35:36.810Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69c90ed29867631d85fa83a9"
+  },
+  "name": "Begone Men's Running Sport Shoes ",
+  "price": 999,
+  "category": "Men",
+  "footwearType": "Sports Shoes",
+  "brandId": {
+    "$oid": "69be972145298dfe7e4e5992"
+  },
+  "brandName": "AJ",
+  "description": "Running Shoes men\nBeat the streets with carefully crafted canvas sneaker shoes for men\nLifestyle: Casual :Sports: Running\nSole Materiel : Extra Lite EVA Sole\nThe shoes have been designed for men who need a pair of comfortable footwear for their day trips. The shoes are made from mesh material.",
+  "sizes": [
+    "7",
+    "8",
+    "9",
+    "10"
+  ],
+  "image": "/uploads/image-1774839827383.jpg",
+  "stock": 17,
+  "rating": 4,
+  "createdAt": {
+    "$date": "2026-03-29T11:36:50.555Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-30T03:34:36.379Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69c90f529867631d85fa83ad"
+  },
+  "name": "Men's   Lace-up   Sports   Shoes",
+  "price": 799,
+  "category": "Men",
+  "footwearType": "Sports Shoes",
+  "brandId": {
+    "$oid": "69be972145298dfe7e4e5992"
+  },
+  "brandName": "AJ",
+  "description": "Step into ultimate performance and style with the Walkaroo WS3122 White Green Sports Shoe. Designed for men who seek comfort, functionality, and a trendy look, these shoes are perfect for an active lifestyle, gym workouts, daily walks, and casual wear.",
+  "sizes": [
+    "7",
+    "8",
+    "9",
+    "10"
+  ],
+  "image": "/uploads/image-1774784232623.jpg",
+  "stock": 11,
+  "rating": 4,
+  "createdAt": {
+    "$date": "2026-03-29T11:38:58.021Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-30T03:25:09.324Z"
   },
   "__v": 0
 }]

@@ -9,18 +9,30 @@ import './Auth.css';
 const Auth = () => {
     const navigate = useNavigate();
     const location = useLocation();
-    const { user, brand, loginUser, loginBrand, registerWithOTP, registerBrand, sendOTP, forgotPassword, sendResetOTP, resetPassword } = useContext(AuthContext);
+    const {
+        user,
+        brand,
+        loginUser,
+        loginBrand,
+        registerWithOTP,
+        registerBrand,
+        sendOTP,
+        verifyOTP,
+        forgotPassword,
+        sendResetOTP,
+        resetPassword
+    } = useContext(AuthContext);
 
     React.useEffect(() => {
         // Only auto-redirect if coming from somewhere else or intended to login
         const redirect = location.search ? new URLSearchParams(location.search).get('redirect') : null;
-        
+
         if (user && redirect) {
             navigate(redirect);
         } else if (user && (location.pathname === '/login' || location.pathname === '/register')) {
             navigate(user.role === 'admin' ? '/admin/dashboard' : '/');
         }
-        
+
         if (brand && (location.pathname === '/login' || location.pathname === '/register')) {
             navigate('/brand/dashboard');
         }
@@ -146,7 +158,7 @@ const Auth = () => {
         e.preventDefault();
         if (newPass !== confirmNewPass) return setError('Passwords do not match');
         if (newPass.length < 6) return setError('Password must be at least 6 characters');
-        
+
         setLoading(true);
         setError('');
         const result = await resetPassword(forgotEmail, forgotOtp, newPass, isBrand);
@@ -165,7 +177,7 @@ const Auth = () => {
         e.preventDefault();
         if (regPass !== regConfirmPass) return setError('Passwords do not match');
         if (regPass.length < 6) return setError('Password must be at least 6 characters');
-        
+
         setLoading(true);
         setError('');
         const result = await sendOTP(regEmail);
@@ -179,15 +191,41 @@ const Auth = () => {
 
     const handleOTPVerify = async (e) => {
         e.preventDefault();
+
         if (otp.length !== 6) return setError('Enter a valid 6-digit OTP');
-        setRegStep(3);
+
+        setLoading(true);
+        setError('');
+
+        const result = await verifyOTP(regEmail, otp);
+
+        if (result.success) {
+            setRegStep(3);
+        } else {
+            setError(result.message);
+        }
+
+        setLoading(false);
+    };
+
+    const handleResendOTP = async () => {
+        setLoading(true);
+        setError('');
+
+        const result = await sendOTP(regEmail);
+
+        if (!result.success) {
+            setError(result.message);
+        }
+
+        setLoading(false);
     };
 
     const handleFinalRegister = async (e) => {
         e.preventDefault();
         setLoading(true);
         setError('');
-        
+
         try {
             let result;
             if (isBrand) {
@@ -246,7 +284,7 @@ const Auth = () => {
     return (
         <div className="auth-page-wrapper">
             <div className={`auth-container ${isRightPanelActive ? 'right-panel-active' : ''}`}>
-                
+
                 {/* Sign Up Section */}
                 <div className="form-container sign-up-container p-4 d-flex flex-column justify-content-center">
                     <div className="w-100 scrollable-form px-1 px-lg-3">
@@ -254,7 +292,7 @@ const Auth = () => {
                             <h2 className="fw-black mb-1 text-dark">{isBrand ? 'Brand Partner' : 'Join StepStyle'}</h2>
                             <p className="text-muted small">Step {regStep} of 3: {regStep === 1 ? 'Credentials' : regStep === 2 ? 'Verification' : 'Profile Details'}</p>
                         </div>
-                        
+
                         {regStep === 1 && (
                             <div className="d-flex gap-3 mb-4">
                                 <div className={`role-toggle-btn ${!isBrand ? 'active' : ''}`} onClick={() => setIsBrand(false)}>
@@ -267,7 +305,7 @@ const Auth = () => {
                         )}
 
                         {error && isRightPanelActive && <Alert variant="danger" className="py-2 border-0 small shadow-sm mb-4">{error}</Alert>}
-                        
+
                         {/* Registration Steps */}
                         {regStep === 1 && (
                             <Form onSubmit={handleInitialSubmit}>
@@ -303,7 +341,7 @@ const Auth = () => {
                                     <div className="p-3 rounded-circle bg-light d-inline-block mb-3">
                                         <FaEnvelope className="text-danger fs-3" />
                                     </div>
-                                    <p className="text-muted small">We've sent a 6-digit code to <br/><strong>{regEmail}</strong></p>
+                                    <p className="text-muted small">We've sent a 6-digit code to <br /><strong>{regEmail}</strong></p>
                                 </div>
                                 <Form onSubmit={handleOTPVerify}>
                                     <Form.Control type="text" placeholder="· · · · · ·" maxLength="6" className="text-center fw-bold fs-3 py-3 rounded-4 letter-spacing-10 bg-light mb-4" value={otp} onChange={(e) => setOtp(e.target.value)} required />
@@ -327,10 +365,10 @@ const Auth = () => {
                                                         <FaImage className="me-1" /> Profile Picture
                                                     </Form.Label>
                                                     <div className="d-flex align-items-center gap-2">
-                                                        <Form.Control 
-                                                            type="file" 
-                                                            onChange={uploadFileHandler} 
-                                                            className="bg-light border-0 py-2 fs-7" 
+                                                        <Form.Control
+                                                            type="file"
+                                                            onChange={uploadFileHandler}
+                                                            className="bg-light border-0 py-2 fs-7"
                                                         />
                                                         {uploading && <Spinner animation="border" size="sm" variant="danger" />}
                                                     </div>
@@ -400,10 +438,10 @@ const Auth = () => {
                                                         <FaImage className="me-1" /> Brand Logo
                                                     </Form.Label>
                                                     <div className="d-flex align-items-center gap-2">
-                                                        <Form.Control 
-                                                            type="file" 
-                                                            onChange={uploadFileHandler} 
-                                                            className="bg-light border-0 py-2 fs-7" 
+                                                        <Form.Control
+                                                            type="file"
+                                                            onChange={uploadFileHandler}
+                                                            className="bg-light border-0 py-2 fs-7"
                                                         />
                                                         {uploading && <Spinner animation="border" size="sm" variant="danger" />}
                                                     </div>
@@ -476,7 +514,7 @@ const Auth = () => {
                             </div>
 
                             {error && !isRightPanelActive && <Alert variant="danger" className="py-2 border-0 small shadow-sm mb-4">{error}</Alert>}
-                            
+
                             <InputGroup className="mb-3">
                                 <InputGroup.Text className="bg-light border-0"><FaEnvelope className="text-muted" /></InputGroup.Text>
                                 <Form.Control type="email" placeholder="Registered email" required value={loginEmail} onChange={(e) => setLoginEmail(e.target.value)} className="bg-light border-0 py-2" />
@@ -528,7 +566,7 @@ const Auth = () => {
 
                             {forgotStep === 2 && (
                                 <Form onSubmit={handleForgotOTPVerify}>
-                                    <p className="text-center text-muted small mb-4">Verification code sent to <br/><strong>{forgotEmail}</strong></p>
+                                    <p className="text-center text-muted small mb-4">Verification code sent to <br /><strong>{forgotEmail}</strong></p>
                                     <Form.Control type="text" placeholder="· · · · · ·" maxLength="6" className="text-center fw-bold fs-3 py-3 rounded-4 letter-spacing-10 bg-light mb-4" value={forgotOtp} onChange={(e) => setForgotOtp(e.target.value)} required />
                                     <Button variant="danger" className="w-100 auth-btn-main shadow mb-3" type="submit">
                                         Verify OTP
@@ -581,7 +619,7 @@ const Auth = () => {
                     </div>
                 </div>
             </div>
-            
+
 
         </div>
     );

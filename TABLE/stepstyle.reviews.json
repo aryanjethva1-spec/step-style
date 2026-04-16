@@ -167,4 +167,155 @@
     "$date": "2026-03-23T09:13:32.525Z"
   },
   "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69c8b9eaea349001fa9111b9"
+  },
+  "userId": {
+    "$oid": "69b473d416496cd4206c90f5"
+  },
+  "name": "System Admin",
+  "email": "admin@stepstyle.com",
+  "productId": {
+    "$oid": "69be820d45298dfe7e4e594a"
+  },
+  "rating": 5,
+  "comment": "Excellent",
+  "createdAt": {
+    "$date": "2026-03-29T05:34:34.221Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-29T05:34:34.221Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69c90fc39867631d85fa83c5"
+  },
+  "userId": {
+    "$oid": "69c8a867ea349001fa911104"
+  },
+  "name": "aryan ",
+  "email": "jethvaaryan415@gmail.com",
+  "productId": {
+    "$oid": "69c90ed29867631d85fa83a9"
+  },
+  "rating": 4,
+  "comment": "Looks crazy and wear it too easy when we walk does not look like we wear anything.\n",
+  "createdAt": {
+    "$date": "2026-03-29T11:40:51.775Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-29T11:40:51.775Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69c90fed9867631d85fa83d5"
+  },
+  "userId": {
+    "$oid": "69c8a867ea349001fa911104"
+  },
+  "name": "aryan ",
+  "email": "jethvaaryan415@gmail.com",
+  "productId": {
+    "$oid": "69be9c7345298dfe7e4e59bf"
+  },
+  "rating": 5,
+  "comment": "This sneaker is really awesome. ",
+  "createdAt": {
+    "$date": "2026-03-29T11:41:33.525Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-29T11:41:33.525Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69c910309867631d85fa83ed"
+  },
+  "userId": {
+    "$oid": "69c8a867ea349001fa911104"
+  },
+  "name": "aryan ",
+  "email": "jethvaaryan415@gmail.com",
+  "productId": {
+    "$oid": "69b700b54f771dc5bff26ead"
+  },
+  "rating": 5,
+  "comment": "It was an amazing experience of wearing this slidder.",
+  "createdAt": {
+    "$date": "2026-03-29T11:42:40.010Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-29T11:42:40.010Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69c9ea8246ee82b7054b3e05"
+  },
+  "userId": {
+    "$oid": "69c9e9d846ee82b7054b3ca4"
+  },
+  "name": "utsav",
+  "email": "utsavmeghani22@gmail.com",
+  "productId": {
+    "$oid": "69bea38245298dfe7e4e59cb"
+  },
+  "rating": 5,
+  "comment": "just looking like wow",
+  "createdAt": {
+    "$date": "2026-03-30T03:14:10.986Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-30T03:14:10.986Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69c9eace46ee82b7054b3e15"
+  },
+  "userId": {
+    "$oid": "69c9e9d846ee82b7054b3ca4"
+  },
+  "name": "utsav",
+  "email": "utsavmeghani22@gmail.com",
+  "productId": {
+    "$oid": "69be99ef45298dfe7e4e59b7"
+  },
+  "rating": 5,
+  "comment": "this is the best product that I purchase on internet",
+  "createdAt": {
+    "$date": "2026-03-30T03:15:26.576Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-30T03:15:26.576Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69c9ed1546ee82b7054b3e76"
+  },
+  "name": "lax",
+  "email": "laxdiyora1221@gmail.com",
+  "productId": {
+    "$oid": "69c90f529867631d85fa83ad"
+  },
+  "rating": 4,
+  "comment": "W product",
+  "createdAt": {
+    "$date": "2026-03-30T03:25:09.319Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-30T03:25:09.319Z"
+  },
+  "__v": 0
 }]

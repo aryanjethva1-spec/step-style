@@ -60,22 +60,23 @@ const AddProduct = () => {
 
     const uploadFileHandler = async (e) => {
         const file = e.target.files[0];
+        if (!file) return;
+
         const formData = new FormData();
         formData.append('image', file);
-        setUploading(true);
 
+        setUploading(true);
         try {
-            const config = {
+            const { data } = await api.post('/upload', formData, {
                 headers: { 'Content-Type': 'multipart/form-data' },
-            };
-            const { data } = await api.post('/upload', formData, config);
+            });
+
             setImage(data.image);
-            setUploading(false);
         } catch (error) {
-            console.error(error);
-            alert('Image upload failed');
-            setUploading(false);
+            console.error('Upload error:', error);
+            alert(error.response?.data?.message || 'Image upload failed');
         }
+        setUploading(false);
     };
 
     const submitHandler = async (e) => {
@@ -85,15 +86,15 @@ const AddProduct = () => {
         setLoading(true);
         try {
             const sizeArray = sizes.split(',').map(s => s.trim());
-            const productData = { 
-                name, 
-                price: Number(price), 
-                category, 
+            const productData = {
+                name,
+                price: Number(price),
+                category,
                 footwearType,
-                description, 
-                sizes: sizeArray, 
-                image, 
-                stock: Number(stock) 
+                description,
+                sizes: sizeArray,
+                image,
+                stock: Number(stock)
             };
 
             if (isEditMode) {
@@ -128,11 +129,11 @@ const AddProduct = () => {
                                 <div className="p-4 rounded-4 bg-light border-dashed d-flex flex-column align-items-center justify-content-center text-center position-relative" style={{ border: '2px dashed #dee2e6', minHeight: '200px' }}>
                                     {image ? (
                                         <div className="position-relative">
-                                            <img 
-                                                src={image.startsWith('http') ? image : `${BASE_URL}${image}`} 
-                                                alt="Preview" 
-                                                style={{ maxHeight: '250px', maxWidth: '100%', objectFit: 'contain' }} 
-                                                className="rounded shadow" 
+                                            <img
+                                                src={image.startsWith('http') ? image : `${BASE_URL}${image}`}
+                                                alt="Preview"
+                                                style={{ maxHeight: '250px', maxWidth: '100%', objectFit: 'contain' }}
+                                                className="rounded shadow"
                                             />
                                             <div className="mt-3 text-success fw-bold small"><FaCheckCircle className="me-1" /> Image Chosen Successfully</div>
                                         </div>
@@ -145,9 +146,9 @@ const AddProduct = () => {
                                             <p className="text-muted small mb-0">Recommended size: 1000x1000px (JPG, PNG)</p>
                                         </>
                                     )}
-                                    <input 
-                                        type="file" 
-                                        className="position-absolute w-100 h-100 opacity-0 cursor-pointer" 
+                                    <input
+                                        type="file"
+                                        className="position-absolute w-100 h-100 opacity-0 cursor-pointer"
                                         onChange={uploadFileHandler}
                                         style={{ top: 0, left: 0, cursor: 'pointer' }}
                                     />
@@ -162,9 +163,9 @@ const AddProduct = () => {
                             <Col md={12}>
                                 <Form.Group>
                                     <Form.Label className="fw-bold text-dark mb-2">Product Name</Form.Label>
-                                    <Form.Control 
-                                        type="text" 
-                                        placeholder="e.g. Premium Leather Sneakers" 
+                                    <Form.Control
+                                        type="text"
+                                        placeholder="e.g. Premium Leather Sneakers"
                                         className="rounded-3 p-3 bg-light border-0 shadow-none fs-5 h-auto fw-bold"
                                         value={name}
                                         onChange={(e) => setName(e.target.value)}
@@ -176,7 +177,7 @@ const AddProduct = () => {
                             <Col md={6}>
                                 <Form.Group>
                                     <Form.Label className="fw-bold text-dark mb-2">Footwear Type</Form.Label>
-                                    <Form.Select 
+                                    <Form.Select
                                         className="rounded-3 p-3 bg-light border-0 shadow-none h-auto"
                                         value={footwearType}
                                         onChange={(e) => setFootwearType(e.target.value)}
@@ -198,7 +199,7 @@ const AddProduct = () => {
                             <Col md={6}>
                                 <Form.Group>
                                     <Form.Label className="fw-bold text-dark mb-2">Target Group (Gender)</Form.Label>
-                                    <Form.Select 
+                                    <Form.Select
                                         className="rounded-3 p-3 bg-light border-0 shadow-none h-auto"
                                         value={category}
                                         onChange={(e) => setCategory(e.target.value)}
@@ -216,9 +217,9 @@ const AddProduct = () => {
                             <Col md={3}>
                                 <Form.Group>
                                     <Form.Label className="fw-bold text-dark mb-2">Price (₹)</Form.Label>
-                                    <Form.Control 
-                                        type="number" 
-                                        placeholder="0.00" 
+                                    <Form.Control
+                                        type="number"
+                                        placeholder="0.00"
                                         className="rounded-3 p-3 bg-light border-0 shadow-none h-auto"
                                         value={price}
                                         onChange={(e) => setPrice(e.target.value)}
@@ -231,9 +232,9 @@ const AddProduct = () => {
                             <Col md={3}>
                                 <Form.Group>
                                     <Form.Label className="fw-bold text-dark mb-2">Initial Stock</Form.Label>
-                                    <Form.Control 
-                                        type="number" 
-                                        placeholder="0" 
+                                    <Form.Control
+                                        type="number"
+                                        placeholder="0"
                                         className="rounded-3 p-3 bg-light border-0 shadow-none h-auto"
                                         value={stock}
                                         onChange={(e) => setStock(e.target.value)}
@@ -246,9 +247,9 @@ const AddProduct = () => {
                             <Col md={12}>
                                 <Form.Group>
                                     <Form.Label className="fw-bold text-dark mb-2">Available Sizes (comma separated)</Form.Label>
-                                    <Form.Control 
-                                        type="text" 
-                                        placeholder="e.g. 7, 8, 9, 10, 11" 
+                                    <Form.Control
+                                        type="text"
+                                        placeholder="e.g. 7, 8, 9, 10, 11"
                                         className="rounded-3 p-3 bg-light border-0 shadow-none h-auto"
                                         value={sizes}
                                         onChange={(e) => setSizes(e.target.value)}
@@ -260,10 +261,10 @@ const AddProduct = () => {
                             <Col md={12}>
                                 <Form.Group>
                                     <Form.Label className="fw-bold text-dark mb-2">Detailed Description</Form.Label>
-                                    <Form.Control 
-                                        as="textarea" 
-                                        rows={5} 
-                                        placeholder="Describe the material, comfort, and unique features of this footwear..." 
+                                    <Form.Control
+                                        as="textarea"
+                                        rows={5}
+                                        placeholder="Describe the material, comfort, and unique features of this footwear..."
                                         className="rounded-4 p-3 bg-light border-0 shadow-none h-auto"
                                         value={description}
                                         onChange={(e) => setDescription(e.target.value)}
@@ -273,10 +274,10 @@ const AddProduct = () => {
                             </Col>
 
                             <Col md={12} className="text-end mt-4">
-                                <Button 
-                                    variant="danger" 
-                                    type="submit" 
-                                    size="lg" 
+                                <Button
+                                    variant="danger"
+                                    type="submit"
+                                    size="lg"
                                     className="rounded-pill px-5 py-3 fw-bold shadow-sm d-inline-flex align-items-center gap-2"
                                     disabled={loading || uploading}
                                 >
