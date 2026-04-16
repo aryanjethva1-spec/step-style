@@ -1,34 +1,31 @@
 import multer from 'multer';
-import path from 'path';
+import { CloudinaryStorage } from 'multer-storage-cloudinary';
+import cloudinary from '../config/cloudinary.js';
 
-const storage = multer.diskStorage({
-  destination(req, file, cb) {
-    cb(null, 'uploads/');
-  },
-  filename(req, file, cb) {
-    cb(
-      null,
-      `${file.fieldname}-${Date.now()}${path.extname(file.originalname)}`
-    );
-  },
+const storage = new CloudinaryStorage({
+  cloudinary,
+  params: async (req, file) => ({
+    folder: 'stepstyle',
+    allowed_formats: ['jpg', 'jpeg', 'png', 'webp'],
+    transformation: [{ width: 1000, height: 1000, crop: 'limit' }],
+  }),
 });
 
-function checkFileType(file, cb) {
-  const filetypes = /jpg|jpeg|png/;
-  const extname = filetypes.test(path.extname(file.originalname).toLowerCase());
-  const mimetype = filetypes.test(file.mimetype);
+const fileFilter = (req, file, cb) => {
+  const allowedMimeTypes = ['image/jpeg', 'image/jpg', 'image/png', 'image/webp'];
 
-  if (extname && mimetype) {
-    cb(null, true);
-  } else {
-    cb(new Error('Images only!'), false);
+  if (!allowedMimeTypes.includes(file.mimetype)) {
+    return cb(new Error('Only JPG, JPEG, PNG, and WEBP files are allowed'));
   }
-}
+
+  cb(null, true);
+};
 
 const upload = multer({
   storage,
-  fileFilter: function (req, file, cb) {
-    checkFileType(file, cb);
+  fileFilter,
+  limits: {
+    fileSize: 5 * 1024 * 1024,
   },
 });
 
