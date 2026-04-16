@@ -21,7 +21,7 @@ const getTransporter = () => {
   return nodemailer.createTransport({
     host,
     port,
-    secure: false, // port 587 = STARTTLS, not SSL
+    secure: false,
     auth: {
       user: login,
       pass: key,
@@ -33,7 +33,7 @@ const getFromEmail = () => {
   const fromEmail = process.env.EMAIL_FROM;
   if (!fromEmail) {
     throw new Error(
-      'EMAIL_FROM is missing. Use a verified sender email from Brevo.'
+      'EMAIL_FROM is missing. Add a Brevo verified sender email in Render.'
     );
   }
   return fromEmail;
@@ -49,7 +49,7 @@ const saveOTP = async (email, otp) => {
   );
 };
 
-const buildOtpHtml = ({ title, subtitle, otp, intro }) => `
+const buildOtpHtml = ({ title, subtitle, intro, otp }) => `
   <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 24px; background: #ffffff; border: 1px solid #e5e7eb; border-radius: 12px;">
     <h1 style="margin: 0 0 8px; color: #111827;">StepStyle</h1>
     <p style="margin: 0 0 24px; color: #6b7280;">${subtitle}</p>
@@ -63,10 +63,7 @@ const buildOtpHtml = ({ title, subtitle, otp, intro }) => `
       </div>
     </div>
 
-    <p style="color: #374151; line-height: 1.7;">
-      This OTP is valid for 5 minutes.
-    </p>
-
+    <p style="color: #374151; line-height: 1.7;">This OTP is valid for 5 minutes.</p>
     <p style="color: #6b7280; font-size: 14px; margin-top: 24px;">
       If you did not request this, you can safely ignore this email.
     </p>
@@ -76,14 +73,12 @@ const buildOtpHtml = ({ title, subtitle, otp, intro }) => `
 const sendMail = async ({ to, subject, html }) => {
   const transporter = getTransporter();
 
-  const info = await transporter.sendMail({
+  return transporter.sendMail({
     from: `"${getFromName()}" <${getFromEmail()}>`,
     to,
     subject,
     html,
   });
-
-  return info;
 };
 
 export const sendOTP = async (req, res) => {
