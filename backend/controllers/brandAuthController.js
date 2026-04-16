@@ -23,19 +23,19 @@ export const registerBrand = async (req, res) => {
             return res.status(400).json({ message: 'Brand registration already exists or pending approval' });
         }
 
-        const brandApproval = await BrandApproval.create({ 
-            brandName, email, password, description, logo, ownerName, username, address, city, state, pincode, country, contact, gstNo 
+        const brandApproval = await BrandApproval.create({
+            brandName, email, password, description, logo, ownerName, username, address, city, state, pincode, country, contact, gstNo
         });
         if (brandApproval) {
             // Delete OTP after successful registration
             await OTP.deleteOne({ _id: otpRecord._id });
 
-            res.status(201).json({ 
-                message: 'Registration request sent to admin for approval', 
+            res.status(201).json({
+                message: 'Registration request sent to admin for approval',
                 _id: brandApproval._id,
                 brandName: brandApproval.brandName,
                 email: brandApproval.email,
-                status: 'pending' 
+                status: 'pending'
             });
         } else {
             res.status(400).json({ message: 'Invalid brand data' });
@@ -52,8 +52,8 @@ export const loginBrand = async (req, res) => {
         const brand = await Brand.findOne({ email });
 
         if (brand && (await brand.matchPassword(password))) {
-            if(brand.status === 'rejected') {
-               return res.status(401).json({ message: 'Brand account suspended/rejected by admin' })
+            if (brand.status === 'rejected') {
+                return res.status(401).json({ message: 'Brand account suspended/rejected by admin' })
             }
 
             generateToken(res, brand._id, 'brand');
@@ -67,7 +67,15 @@ export const loginBrand = async (req, res) => {
 };
 
 export const logoutBrand = (req, res) => {
-    res.cookie('jwtBrand', '', { httpOnly: true, expires: new Date(0) });
+    const isProduction = process.env.NODE_ENV === 'production';
+
+    res.clearCookie('jwtBrand', {
+        httpOnly: true,
+        secure: isProduction,
+        sameSite: isProduction ? 'none' : 'lax',
+        path: '/',
+    });
+
     res.json({ message: 'Brand logged out' });
 };
 

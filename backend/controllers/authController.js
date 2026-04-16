@@ -16,13 +16,13 @@ export const registerUser = async (req, res) => {
         const userExists = await User.findOne({ email });
         if (userExists) return res.status(400).json({ message: 'User already exists' });
 
-        const user = await User.create({ 
-            name, email, password, addressLine1, addressLine2, city, state, pincode, country, addressType, landmark, contact, gender 
+        const user = await User.create({
+            name, email, password, addressLine1, addressLine2, city, state, pincode, country, addressType, landmark, contact, gender
         });
         if (user) {
             // Delete OTP after successful registration
             await OTP.deleteOne({ _id: otpRecord._id });
-            
+
             generateToken(res, user._id);
             res.status(201).json({ _id: user._id, name: user.name, email: user.email, role: user.role });
         } else {
@@ -51,7 +51,15 @@ export const loginUser = async (req, res) => {
 };
 
 export const logoutUser = (req, res) => {
-    res.cookie('jwt', '', { httpOnly: true, expires: new Date(0) });
+    const isProduction = process.env.NODE_ENV === 'production';
+
+    res.clearCookie('jwt', {
+        httpOnly: true,
+        secure: isProduction,
+        sameSite: isProduction ? 'none' : 'lax',
+        path: '/',
+    });
+
     res.json({ message: 'User logged out' });
 };
 
