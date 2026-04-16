@@ -88,26 +88,29 @@ const Auth = () => {
     const [uploading, setUploading] = useState(false);
 
     const uploadFileHandler = async (e) => {
-        const file = e.target.files[0];
-        const formData = new FormData();
-        formData.append('image', file);
-        setUploading(true);
+    const file = e.target.files[0];
+    if (!file) return;
 
-        try {
-            const config = {
-                headers: {
-                    'Content-Type': 'multipart/form-data',
-                },
-            };
-            const { data } = await api.post('/upload', formData, config);
-            setRegLogo(data.image);
-            setUploading(false);
-        } catch (error) {
-            console.error(error);
-            setError('Image upload failed');
-            setUploading(false);
-        }
-    };
+    const formData = new FormData();
+    formData.append('image', file);
+    setUploading(true);
+    setError('');
+
+    try {
+        const config = {
+            headers: {
+                'Content-Type': 'multipart/form-data',
+            },
+        };
+        const { data } = await api.post('/upload', formData, config);
+        setRegLogo(data.image);
+        setUploading(false);
+    } catch (error) {
+        console.error(error);
+        setError(error.response?.data?.message || 'Image upload failed');
+        setUploading(false);
+    }
+};
 
     const handleLogin = async (e) => {
         e.preventDefault();
